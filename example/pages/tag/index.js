@@ -14,7 +14,8 @@ Page({
       },
       {
         type: 'danger',
-        text: '会员折扣'
+        text: '会员折扣',
+        empty: true
       },
       {
         type: 'warn',

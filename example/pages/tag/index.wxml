@@ -1,0 +1,1 @@
+<k-tag type="{{ item.type }}" wx:for="{{ types }}" wx:for-item="item" wx:key="index" class="single-tag">{{ item.text }}</k-tag>

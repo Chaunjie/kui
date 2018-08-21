@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/tag/index",
     "pages/actionsheet/index"
   ],
   "window": {

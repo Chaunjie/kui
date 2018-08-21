@@ -9,6 +9,7 @@ Page({
   },
 
   onLoad() {
+    console.log(66666)
     this.setData({
       actions: [
         { name: '选项' },

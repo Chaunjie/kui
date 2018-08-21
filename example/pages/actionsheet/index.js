@@ -12,7 +12,7 @@ Page({
     this.setData({
       actions: [
         { name: '选项' },
-        { name: '选项', subname: '禁用' },
+        { name: '选项', subname: '禁用状态' },
         { name: '选项', loading: true },
         { name: '禁用选项', disabled: true }
       ]

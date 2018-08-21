@@ -4,7 +4,7 @@
 在 index.json 中引入组件
 ```json
 "usingComponents": {
-  "van-actionsheet": "path/to/vant-weapp/dist/actionsheet/index"
+  "k-actionsheet": "path/to/kai-ui/dist/actionsheet/index"
 }
 ```
 
@@ -14,7 +14,7 @@
 需要传入一个`actions`的数组，数组的每一项是一个对象，对象属性见文档下方表格。
 
 ```html
-<van-actionsheet
+<k-actionsheet
   show="{{ show }}"
   actions="{{ actions }}"
   bind:close="onClose"
@@ -64,7 +64,7 @@ Page({
 如果传入了`cancelText`属性，且不为空，则会在下方显示一个取消按钮，点击会将当前`Actionsheet`关闭。
 
 ```html
-<van-actionsheet
+<k-actionsheet
   show="{{ show }}"
   actions="{{ actions }}"
   cancel-text="取消"
@@ -77,9 +77,9 @@ Page({
 如果传入了`title`属性，且不为空，则另外一种样式的`Actionsheet`，里面内容需要自定义。
 
 ```html
-<van-actionsheet show="{{ show }}" title="支持以下配送方式">
+<k-actionsheet show="{{ show }}" title="支持以下配送方式">
   <view>一些内容</view>
-</van-actionsheet>
+</k-actionsheet>
 ```
 
 ### API

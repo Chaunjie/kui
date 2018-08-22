@@ -1,0 +1,10 @@
+<k-panel title="基础用法-不带标题" custom-class="panel-container">
+	<k-panel custom-class="panel-container">
+		<view style="padding: 15px;background-color: #fff;"></view>
+	</k-panel>
+</k-panel>
+<k-panel title="高级用法-带标题" custom-class="panel-container">
+	<k-panel title="标题"  custom-class="panel-container">
+		<view style="padding: 15px;background-color: #fff;">内容</view>
+	</k-panel>
+</k-panel>

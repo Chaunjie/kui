@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "Tag 标记",
-  "backgroundColor": "#3333",
   "usingComponents": {
     "k-tag": "../../dist/tag/index"
   }

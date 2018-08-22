@@ -1,0 +1,18 @@
+.col-container {
+	min-height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background-color: #4B94E2;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+}
+.blue {
+	background-color: #3C77B6;
+}
+.special-col {
+	padding: 10px;
+}
+.panel-container > view {
+	background-color: transparent !important;
+}

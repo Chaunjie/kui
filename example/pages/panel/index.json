@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Panel 面板",
+  "usingComponents": {
+  	"k-panel": "../../dist/panel/index"
+  }
+}

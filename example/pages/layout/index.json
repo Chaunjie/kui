@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Layout 布局",
+  "usingComponents": {
+  	"k-col": "../../dist/col/index",
+  	"k-panel": "../../dist/panel/index"
+  }
+}

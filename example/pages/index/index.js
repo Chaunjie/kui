@@ -137,8 +137,8 @@ Page({
     ]
   },
 
-  onClick (res) {
-  	const detail = res.detail
+  onClick (e) {
+  	const detail = e.currentTarget.dataset.item
   	wx.navigateTo({url: '../' + detail.link + '/index'})
   },
 

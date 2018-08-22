@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/panel/index",
+    "pages/layout/index",
     "pages/cell/index",
     "pages/tag/index",
     "pages/actionsheet/index"

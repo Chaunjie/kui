@@ -20,7 +20,8 @@
 	<k-cell-group custom-class="single-cell-group">
 		<k-cell detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}">
 			<view slot="title">
-        <view class="title-new">单元格</view>
+				<k-icon name="location" class="icon"/>
+        <view class="title-new">搜索</view>
         <k-tag type="danger" custom-class="single-tag">标签</k-tag>
       </view>
 		</k-cell>

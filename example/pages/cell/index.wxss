@@ -12,3 +12,7 @@
 .title-text{
   color: red;
 }
+.icon{
+	display: inline-block;
+	margin-right: 5px;
+}

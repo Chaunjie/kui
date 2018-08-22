@@ -2,6 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/panel/index",
+    "pages/icon/index",
+    "pages/grid/index",
     "pages/layout/index",
     "pages/cell/index",
     "pages/tag/index",

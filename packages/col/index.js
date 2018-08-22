@@ -16,8 +16,7 @@ Component({
 
   methods: {
     onClick (e) {
-      const data = e.currentTarget.dataset.item
-      this.triggerEvent('click', data);
+      this.triggerEvent('click');
     }
   }
 })

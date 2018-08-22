@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Icon 图标",
+  "usingComponents": {
+  	"k-panel": "../../dist/panel/index",
+    "k-col": "../../dist/col/index",
+    "k-icon": "../../dist/icon/index"
+  }
+}

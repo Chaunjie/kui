@@ -21,7 +21,7 @@
 		<k-cell detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}">
 			<view slot="title">
         <view class="title-new">单元格</view>
-        <text class="title-text">内容部分</text>
+        <k-tag type="danger" custom-class="single-tag">标签</k-tag>
       </view>
 		</k-cell>
 		<k-cell title="单元格" arrow="{{ true }}">

@@ -1,0 +1,20 @@
+.custom-panel{
+	background-color: #fff;
+}
+.custom-panel > view:first-of-type{
+	padding:0;
+}
+.col-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+.custom-icon{
+	font-size: 40px !important;
+	color: #999;
+}
+.icon-text{
+	color: #999;
+}

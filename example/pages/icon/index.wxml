@@ -1,0 +1,8 @@
+<k-panel custom-class="custom-panel">
+	<k-col col="6" wx:for="{{ iconArr }}" wx:for-item="item" wx:key="index" custom-class="custom-col">
+		<view class="col-content">
+			<k-icon name="{{ item }}" custom-class="custom-icon"></k-icon>
+			<view class="icon-text">{{ item }}</view>
+		</view>
+	</k-col>
+</k-panel>

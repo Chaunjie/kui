@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Grid 宫格",
+  "usingComponents": {
+  	"k-panel": "../../dist/panel/index",
+    "k-grid": "../../dist/grid/index",
+    "k-grid-item": "../../dist/grid-item/index"
+  }
+}

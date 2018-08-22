@@ -3,6 +3,7 @@
   "usingComponents": {
   	"k-panel": "../../dist/panel/index",
   	"k-cell-group": "../../dist/cell-group/index",
-    "k-cell": "../../dist/cell/index"
+    "k-cell": "../../dist/cell/index",
+    "k-tag": "../../dist/tag/index"
   }
 }

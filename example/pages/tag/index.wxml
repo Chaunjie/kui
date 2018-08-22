@@ -1,1 +1,22 @@
-<k-tag type="{{ item.type }}" wx:for="{{ types }}" wx:for-item="item" wx:key="index" custom-class="single-tag" empty="{{item.empty}}">{{ item.text }}</k-tag>
+<k-panel title="基础用法" custom-class="custom-panel">
+	<k-tag 
+		type="{{ item.type }}" 
+		wx:for="{{ types }}" 
+		wx:for-item="item" 
+		wx:key="index" 
+		custom-class="single-tag" 
+		empty="{{item.empty}}">
+		{{ item.text }}
+	</k-tag>
+</k-panel>
+<k-panel title="镂空用法" custom-class="custom-panel">
+	<k-tag 
+		type="{{ item.type }}" 
+		wx:for="{{ types1 }}" 
+		wx:for-item="item" 
+		wx:key="index" 
+		custom-class="single-tag" 
+		empty="{{item.empty}}">
+		{{ item.text }}
+	</k-tag>
+</k-panel>

@@ -14,8 +14,7 @@ Page({
       },
       {
         type: 'danger',
-        text: '会员折扣',
-        empty: true
+        text: '会员折扣'
       },
       {
         type: 'warn',
@@ -25,18 +24,35 @@ Page({
         type: 'disabled',
         text: '返现不可用'
       }
-  	]
+  	],
+    types1: [
+      {
+        type: 'plain',
+        text: '默认',
+        empty: true
+      },
+      {
+        type: 'primary',
+        text: '返现',
+        empty: true
+      },
+      {
+        type: 'danger',
+        text: '会员折扣',
+        empty: true
+      },
+      {
+        type: 'warn',
+        text: '返现',
+        empty: true
+      },
+      {
+        type: 'disabled',
+        text: '返现不可用',
+        empty: true
+      }
+    ]
   },
 
-  onLoad() {
-    console.log(66666)
-    this.setData({
-      actions: [
-        { name: '选项' },
-        { name: '选项', subname: '禁用状态' },
-        { name: '选项', loading: true },
-        { name: '禁用选项', disabled: true }
-      ]
-    });
-  }
+  onLoad() {}
 });

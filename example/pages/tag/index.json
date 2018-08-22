@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "Tag 标记",
   "usingComponents": {
-    "k-tag": "../../dist/tag/index"
+    "k-tag": "../../dist/tag/index",
+    "k-panel": "../../dist/panel/index"
   }
 }

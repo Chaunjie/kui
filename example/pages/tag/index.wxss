@@ -1,3 +1,7 @@
 .single-tag {
 	margin-right: 10px;
 }
+.custom-panel > view:last-of-type {
+	padding: 0 15px;
+	background-color: transparent !important;
+}

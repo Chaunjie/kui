@@ -1,0 +1,11 @@
+<view class="cell-list custom-class {{access ? 'cell-list-access' : ''}}">
+  <!-- <view class="cell-icon" wx:if="{{item.icontype}}">
+    <text wx:if="{{item.icontype==1}}" class="kai-iconfont cell-icon {{item.icontext}}"></text>
+    <image wx:if="{{item.icontype==2}}" class="cell-img" src="{{item.icontext}}"/>
+  </view> -->
+  <view class="cell-list-bd">
+  	<view wx:if="{{title}}" class="cell-list-text">{{title || ''}}</view>
+  	<view wx:if="{{subtitle}}" class="cell-list-desc">{{subtitle || ''}}</view>
+  </view>
+  <view class="cell-list-arrow" wx:if="{{arrow}}">{{detail || ''}}</view>
+</view>

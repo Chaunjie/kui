@@ -1,0 +1,8 @@
+<k-cell-group custom-class="single-cell-group">
+	<k-cell title="单元格" custom-class="cell-class" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
+	<k-cell title="单元格" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
+	<k-cell title="单元格" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
+</k-cell-group>
+<k-cell-group custom-class="single-cell-group">
+	<k-cell title="单元格" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
+</k-cell-group>

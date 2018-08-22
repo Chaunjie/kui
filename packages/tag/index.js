@@ -1,5 +1,5 @@
 Component({
-	externalClasses: ['single-tag'],
+	externalClasses: ['custom-class'],
   properties: {
     type: {
     	type: String,

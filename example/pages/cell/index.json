@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Cell 单元格",
+  "usingComponents": {
+  	"k-cell-group": "../../dist/cell-group/index",
+    "k-cell": "../../dist/cell/index"
+  }
+}

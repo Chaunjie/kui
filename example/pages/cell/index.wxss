@@ -1,0 +1,7 @@
+.single-cell-group {
+ margin: 10px 0;
+}
+
+.single-cell-group .cell-class > view > view{
+  font-size: 10px;
+}

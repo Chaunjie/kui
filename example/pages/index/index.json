@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "Cell 单元格",
+  "navigationBarTitleText": "主页",
   "usingComponents": {
   	"k-panel": "../../dist/panel/index",
   	"k-cell-group": "../../dist/cell-group/index",

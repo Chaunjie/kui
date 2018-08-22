@@ -1,8 +1,32 @@
-<k-cell-group custom-class="single-cell-group">
-	<k-cell title="单元格" custom-class="cell-class" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
-	<k-cell title="单元格" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
-	<k-cell title="单元格" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
-</k-cell-group>
-<k-cell-group custom-class="single-cell-group">
-	<k-cell title="单元格" detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}"></k-cell>
-</k-cell-group>
+<k-panel title="基础用法" custom-class="panel-container">
+	<k-cell-group custom-class="single-cell-group">
+		<k-cell title="标题" detail="内容" arrow="{{ true }}"></k-cell>
+		<k-cell title="标题" subtitle="南方介绍的肌肤死不改悔标点符号" arrow="{{ true }}"></k-cell>
+	</k-cell-group>
+</k-panel>
+<k-panel title="带图标用法" custom-class="panel-container">
+	<k-cell-group custom-class="single-cell-group">
+		<k-cell title="标题" detail="内容" arrow="{{ true }}" access="{{ true }}"></k-cell>
+		<k-cell title="标题" detail="内容" arrow="{{ true }}" access="{{ true }}"></k-cell>
+	</k-cell-group>
+</k-panel>
+<k-panel title="带箭头用法" custom-class="panel-container">
+	<k-cell-group custom-class="single-cell-group">
+		<k-cell title="标题" arrow="{{ true }}" access="{{ true }}"></k-cell>
+		<k-cell title="标题" detail="内容" arrow="{{ true }}" access="{{ true }}"></k-cell>
+	</k-cell-group>
+</k-panel>
+<k-panel title="高级用法" custom-class="panel-container">
+	<k-cell-group custom-class="single-cell-group">
+		<k-cell detail="并为部分都不是" arrow="{{ true }}" access="{{ true }}">
+			<view slot="title">
+        <view class="title-new">单元格</view>
+        <text class="title-text">内容部分</text>
+      </view>
+		</k-cell>
+		<k-cell title="单元格" arrow="{{ true }}">
+			<view slot="detail">自定义内容部分</view>
+		</k-cell>
+		<k-cell title="标题" custom-class="cell-class" detail="自定义内容样式" arrow="{{ true }}" access="{{ true }}"></k-cell>
+	</k-cell-group>
+</k-panel>

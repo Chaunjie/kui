@@ -1,7 +1,14 @@
 .single-cell-group {
- margin: 10px 0;
+ margin-bottom: 10px;
 }
 
-.single-cell-group .cell-class > view > view{
+.single-cell-group .cell-class > view:last-of-type{
   font-size: 10px;
+}
+.title-new{
+  display: inline-block;
+  margin-right: 5px;
+}
+.title-text{
+  color: red;
 }

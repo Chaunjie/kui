@@ -1,0 +1,8 @@
+<view class="icon-img">
+  <view class="bg"></view>
+</view>
+<k-panel title="{{item.title}}" custom-class="panel-container" wx:for="{{ cellArr }}" wx:for-item="item" wx:key="index">
+	<k-cell-group custom-class="single-cell-group">
+		<k-cell title="{{it.title}}" item="{{ it }}" arrow="{{ true }}" access="{{ true }}" wx:for="{{ item.list }}" wx:for-item="it" wx:key="idx" bind:click="onClick"></k-cell>
+	</k-cell-group>
+</k-panel>

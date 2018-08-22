@@ -1,5 +1,8 @@
 Component({
   externalClasses: ['custom-class'],
+  options: {
+    multipleSlots: true
+  },
   properties: {
     title: {
     	type: String,
@@ -20,8 +23,17 @@ Component({
     arrow: {
     	type: Boolean,
     	value: false
+    },
+    item: {
+      type: Object,
+      value: {}
     }
   },
 
-  methods: {}
+  methods: {
+    onClick (e) {
+      const data = e.currentTarget.dataset.item
+      this.triggerEvent('click', data);
+    }
+  }
 })

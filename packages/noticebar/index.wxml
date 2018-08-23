@@ -1,4 +1,4 @@
-<view class="noticebar {{icon ? 'icon-noticebar' : ''}}">
+<view class="noticebar custom-class {{icon ? 'icon-noticebar' : ''}}">
   <view class="icon-content" wx:if="{{icon}}">
     <k-icon name="broadcast" custom-class="custom-broadcast"/>
   </view>

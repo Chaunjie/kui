@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Tab 标签",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-tab": "../../dist/tab/index"
+  }
+}

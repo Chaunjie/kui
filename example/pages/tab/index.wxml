@@ -1,0 +1,7 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <k-tab id="tab2"></k-tab>
+</k-panel>
+<k-panel title="高级用法" custom-class="custom-panel">
+  <k-tab id="tab1" custom-class="custom-tab" bind:select="onClick"></k-tab>
+  <view class="font-12 padding-10">{{selectData}}</view>
+</k-panel>

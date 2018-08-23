@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/panel/index",
+    "pages/noticebar/index",
     "pages/loadmore/index",
+    "pages/helper/index",
     "pages/button/index",
     "pages/loading/index",
     "pages/icon/index",

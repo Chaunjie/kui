@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Helper 基础样式",
+  "usingComponents": {
+  	"k-panel": "../../dist/panel/index"
+  }
+}

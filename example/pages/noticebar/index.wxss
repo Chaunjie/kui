@@ -1,0 +1,7 @@
+.custom-panel > view:last-of-type{
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+}
+.custom-btn{
+  margin-top: 20px;
+}

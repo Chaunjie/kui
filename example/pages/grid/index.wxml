@@ -2,8 +2,8 @@
 	<k-grid col="9" bind:tap="onClick">
 		<k-grid-item wx:for="{{ [0,1,2,3,4,5,6,7,8] }}" wx:for-item="item" wx:key="index">
 			<view slot="content">
-				<view class="title">标题</view>
-				<view class="content">内容</view>
+				<k-icon name="{{iconArr[index]}}" custom-class="custom-icon"/>
+				<view class="content">{{ iconArr[index] }}</view>
 			</view>
 		</k-grid-item>
 	</k-grid>

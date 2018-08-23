@@ -3,6 +3,7 @@
   "usingComponents": {
   	"k-panel": "../../dist/panel/index",
     "k-grid": "../../dist/grid/index",
-    "k-grid-item": "../../dist/grid-item/index"
+    "k-grid-item": "../../dist/grid-item/index",
+    "k-icon": "../../dist/icon/index"
   }
 }

@@ -1,0 +1,15 @@
+<k-panel title="圆形用法" custom-class="custom-panel">
+	<k-loading custom-class="inline"/>
+	<k-loading custom-class="inline black"/>
+</k-panel>
+<k-panel title="菊花状用法" custom-class="custom-panel">
+	<k-loading type="circular" custom-class="inline"/>
+</k-panel>
+<k-panel title="大尺寸用法" custom-class="custom-panel">
+	<k-loading custom-class="inline" size="big"/>
+	<k-loading custom-class="inline black" size="big"/>
+</k-panel>
+<k-panel title="自定义尺寸用法" custom-class="custom-panel">
+	<k-loading custom-class="inline custom-size"/>
+	<k-loading custom-class="inline black custom-size"/>
+</k-panel>

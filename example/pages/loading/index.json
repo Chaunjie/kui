@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Loading 加载中",
+  "usingComponents": {
+  	"k-panel": "../../dist/panel/index",
+  	"k-loading": "../../dist/loading/index"
+  }
+}

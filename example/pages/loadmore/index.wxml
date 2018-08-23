@@ -1,0 +1,6 @@
+<k-panel title="加载中" custom-class="custom-panel">
+	<k-loadmore more="{{more1}}"/>
+</k-panel>
+<k-panel title="没有更多" custom-class="custom-panel">
+	<k-loadmore more="{{more2}}"/>
+</k-panel>

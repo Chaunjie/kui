@@ -2,6 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/panel/index",
+    "pages/loadmore/index",
+    "pages/button/index",
+    "pages/loading/index",
     "pages/icon/index",
     "pages/grid/index",
     "pages/layout/index",

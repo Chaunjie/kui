@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "LoadMore 加载更多",
+  "usingComponents": {
+  	"k-panel": "../../dist/panel/index",
+  	"k-loadmore": "../../dist/loadmore/index"
+  }
+}

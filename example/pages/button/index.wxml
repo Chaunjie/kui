@@ -1,0 +1,44 @@
+<k-panel title="迷你尺寸" custom-class="btn-panel">
+	<k-button size="min">按钮</k-button>
+	<k-button name="success" size="min">微信支付</k-button>
+	<k-button name="danger" size="min">京东支付</k-button>
+	<k-button size="min" disabled="{{true}}">禁用状态</k-button>
+</k-panel>
+<k-panel title="小尺寸" custom-class="btn-panel">
+	<k-button size="small">按钮</k-button>
+	<k-button name="success" size="small">微信支付</k-button>
+	<k-button name="danger" size="small">京东支付</k-button>
+	<k-button size="small" disabled="{{true}}">禁用状态</k-button>
+</k-panel>
+<k-panel title="默认尺寸" custom-class="btn-panel">
+	<k-button>按钮</k-button>
+	<k-button name="success">微信支付</k-button>
+	<k-button name="danger">京东支付</k-button>
+	<k-button name="kai">kai支付</k-button>
+	<k-button disabled="{{true}}">禁用状态</k-button>
+</k-panel>
+<k-panel title="镂空" custom-class="btn-panel">
+	<k-button name="success" empty="{{ true }}">微信支付</k-button>
+	<k-button name="danger" empty="true">京东支付</k-button>
+	<k-button name="kai" empty="true">kai支付</k-button>
+</k-panel>
+<k-panel title="高级用法" custom-class="btn-panel">
+	<k-button name="success" empty="{{ true }}">
+		<view>
+			<k-icon name="gear" custom-class="btn-icon"/>
+			<text>微信支付</text>
+		</view>
+	</k-button>
+	<k-button name="danger" empty="true">
+		<view>
+			<k-loading custom-class="btn-icon"/>
+			<text>京东支付</text>
+		</view>		
+	</k-button>
+	<k-button name="kai" empty="true">
+		<view>
+			<k-loading type="circular" custom-class="btn-icon"/>
+			<text>kai支付</text>
+		</view>		
+	</k-button>
+</k-panel>

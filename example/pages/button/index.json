@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Button 按钮",
+  "usingComponents": {
+  	"k-panel": "../../dist/panel/index",
+  	"k-button": "../../dist/button/index",
+    "k-icon": "../../dist/icon/index",
+    "k-loading": "../../dist/loading/index"
+  }
+}

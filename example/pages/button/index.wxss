@@ -1,0 +1,9 @@
+.btn-panel > view:last-of-type{
+	padding: 0 15px;
+	background-color: #f5f5f5 !important;
+}
+
+.btn-icon {
+	display: inline-block !important;
+	margin-right: 5px;
+}

@@ -15,7 +15,10 @@ Component({
     animation: {}
   },
   properties: {
-    tabData: Object
+    tabData: {
+      type: Object,
+      value: {}
+    }
   },
 
   methods: {
@@ -72,6 +75,7 @@ Component({
       }
     },
     getClientArr () {
+      const { textArr, clientArr } = this.data
       wx.createSelectorQuery().in(this).selectAll('.tab-text').boundingClientRect((res) => {
         if (res.length > 0) {
           this.setData({
@@ -163,19 +167,16 @@ Component({
       duration: 100,
       timingFunction: 'ease-in-out'
     })
-    this.setData({
-      animation: animation
-    })
     wx.getSystemInfo({
       success: (res) => {
         this.setData({
-          wWidth: res.windowWidth
+          wWidth: res.windowWidth,
+          animation: animation
         })
       }
     })
   }
 })
 
-const tab = new Tab()
-
+const tab = new Tab();
 export default tab;

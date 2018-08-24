@@ -1,4 +1,3 @@
-import NoticeBar from './noticebar';
 
 Component({
   externalClasses: ['custom-class'],
@@ -8,8 +7,24 @@ Component({
   },
 
   properties: {
-    text: String,
-    icon: Boolean
+    text: {
+      type: String,
+      value: '',
+      observer(currentValue) {
+        this.setData({ text: currentValue }, () => {
+          this.initNoticeBarScroll()
+        });
+      }
+    },
+    icon: {
+      type: Boolean,
+      value: false,
+      observer(currentValue) {
+        this.setData({ icon: currentValue }, () => {
+          this.initNoticeBarScroll()
+        });
+      }
+    }
   },
 
   data: {
@@ -76,9 +91,9 @@ Component({
         this.scrollNoticeBar(mstime)
       }, mstime)
     }
+  },
+
+  ready () {
+    this.initNoticeBarScroll()
   }
 })
-
-const noticebar = new NoticeBar()
-
-export default noticebar;

@@ -40,5 +40,4 @@ Component({
 })
 
 const popup = new Popup()
-
 export default popup;

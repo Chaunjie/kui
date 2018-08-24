@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Popup 弹出层",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-popup": "../../dist/popup/index",
+    "k-button": "../../dist/button/index"
+  }
+}

@@ -1,0 +1,18 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <k-button name="kai" custom-class="custom-btn" catchtap="onClick" data-index="0">中间弹出</k-button>
+  <k-button name="kai" custom-class="custom-btn" catchtap="onClick" data-index="1">上边弹出</k-button>
+  <k-button name="kai" custom-class="custom-btn" catchtap="onClick" data-index="2">右边弹出</k-button>
+  <k-button name="kai" custom-class="custom-btn" catchtap="onClick" data-index="3">下边弹出</k-button>
+  <k-button name="kai" custom-class="custom-btn" catchtap="onClick" data-index="4">左边弹出</k-button>
+</k-panel>
+<k-popup wx:for="{{ popData }}" wx:for-item="item" wx:for-index="index" wx:key="index" show="{{item.showPopup}}" position="{{item.position}}" maskHide="{{item.maskHide}}" id="popup-{{index}}">
+  <view class="pop-inner {{'pop-'+item.position}}">
+    <view class="pop-text">忆江南</view>
+    <view class="pop-text">江南好</view>
+    <view class="pop-text">风景旧曾谙</view>
+    <view class="pop-text">日出江花红胜火</view>
+    <view class="pop-text">春来江水绿如蓝</view>
+    <view class="pop-text">能不忆江南</view>
+    <k-button name="kai" custom-class="margin-top20" catchtap="close" data-index="{{index}}">关闭</k-button>
+  </view>
+</k-popup>

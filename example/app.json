@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/panel/index",
     "pages/noticebar/index",
+    "pages/popup/index",
     "pages/tab/index",
     "pages/loadmore/index",
     "pages/helper/index",

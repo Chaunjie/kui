@@ -1,0 +1,30 @@
+.custom-btn{
+  margin-top:20px;
+}
+.custom-panel > view:last-of-type{
+  padding: 0 15px;
+  background-color: #f5f5f5;
+}
+
+.pop-inner {
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.pop-text {
+  font-size: 16px;
+  text-align: center;
+  line-height: 28px;
+}
+.pop-center {
+  width: 240px;
+  height: 300px;
+}
+.pop-right {
+  width: 200px;
+}
+.pop-left {
+  width: 200px;
+}
+.margin-top20 {
+  margin-top: 20px;
+}

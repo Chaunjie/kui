@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Toptips 顶部提示条",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-toptips": "../../dist/toptips/index",
+    "k-button": "../../dist/button/index"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Dialog 对话框",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-button": "../../dist/button/index",
+    "k-dialog": "../../dist/dialog/index"
+  }
+}

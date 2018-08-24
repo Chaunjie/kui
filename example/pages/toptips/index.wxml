@@ -1,0 +1,4 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <k-toptips id="toptips"></k-toptips>
+  <k-button name="kai" bind:tap="onClick">顶部提示</k-button>
+</k-panel>

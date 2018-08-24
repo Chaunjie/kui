@@ -1,0 +1,8 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <k-button name="kai" custom-class="custom-btn" catchtap="onTap1">纵向对话框</k-button>
+  <k-button name="kai" custom-class="custom-btn" catchtap="onTap">横向对话框</k-button>
+</k-panel>
+<k-panel title="高级用法" custom-class="custom-panel">
+  <k-button name="kai" custom-class="custom-btn" catchtap="onTap2">异步对话框</k-button>
+</k-panel>
+<k-dialog id="k-dialog"></k-dialog>

@@ -15,7 +15,13 @@ Component({
       value: 'bottom'
     },
     maskHide: {
-      type: Boolean,
+      type: [Boolean, String],
+      observer(newVal) {
+        const status = newVal === null ? true : newVal
+        this.setData({
+          maskHide: status
+        })
+      },
       value: true
     }
   },
@@ -32,9 +38,12 @@ Component({
       })
     },
     togglePopup () {
-      this.setData({
-        show: !this.data.show
-      })
+      const { maskHide } = this.data
+      if (maskHide) {
+        this.setData({
+          show: !this.data.show
+        })
+      }
     }
   }
 })

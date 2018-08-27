@@ -50,10 +50,24 @@
 .ac-list {
   text-align: center;
   font-size: 12px;
-  border-bottom: 1rpx solid #e1e1e1;
   min-height: 45px;
   line-height: 45px;
   background: #fff;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    border: 0 solid #e5e5e5;
+    border-bottom-width: 1px;
+  }
   &:last-of-type {
     border-bottom: none;
   }

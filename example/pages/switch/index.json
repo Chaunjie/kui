@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Switch 开关",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-switch": "../../dist/switch/index"
+  }
+}

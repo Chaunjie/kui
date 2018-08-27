@@ -1,0 +1,6 @@
+<k-panel title="{{ item.title }}" wx:for="{{ items }}" wx:for-item="item" wx:for-index="i" wx:key="i" custom-class="custom-panel">
+  <k-switch checked="{{ item.checked }}" disabled="{{ item.disabled }}" loading="{{ item.loading }}" sync="{{ item.sync }}" type="{{ item.type }}" bind:change="change" data-index="{{ i }}"/>
+</k-panel>
+<k-panel title="高级用法"  custom-class="custom-panel">
+  <k-switch custom-class="custom-switch" wx:for="{{ items1 }}" wx:for-item="item" wx:for-index="i" wx:key="i" checked="{{ item.checked }}" disabled="{{ item.disabled }}" loading="{{ item.loading }}" sync="{{ item.sync }}" type="{{ item.type }}" bind:change="change1" data-index="{{ i }}"/>
+</k-panel>

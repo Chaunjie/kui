@@ -31,9 +31,16 @@ Component({
   },
 
   methods: {
-    onClick (e) {
-      // const data = e.currentTarget.dataset.item
-      this.triggerEvent('click');
+    _handleSwitchChange (e) {
+      const dataset = e.currentTarget.dataset
+      if (!dataset.disabled) {
+        this.triggerEvent('change', !dataset.checked)
+        // if (dataset.sync) {
+        //   this.triggerEvent('change', !dataset.checked)
+        // } else {
+        //   this.triggerEvent('change', !dataset.checked)
+        // }
+      }
     }
   }
 })

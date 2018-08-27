@@ -1,5 +1,5 @@
 <view
-    class="switch switch-{{ checked ? 'on' : 'off' }} {{ disabled ? 'swtich-disabled' : '' }} switch-{{type}}"
+    class="switch custom-class switch-{{ checked ? 'on' : 'off' }} {{ disabled ? 'swtich-disabled' : '' }} switch-{{type || 'success'}}"
     data-checked="{{ checked }}"
     data-sync="{{ sync }}"
     data-loading="{{loading}}"

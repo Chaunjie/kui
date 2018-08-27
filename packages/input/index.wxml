@@ -1,4 +1,4 @@
-<view class="field-cell field {{ !showError ? 'field-error' : '' }}">
+<view class="field-cell custom-class field {{ !showError ? 'field-error' : '' }}">
   <view
     wx:if="{{ label }}"
     class="field-cell__hd field-title">{{ label }}</view>

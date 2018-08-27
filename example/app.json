@@ -4,6 +4,7 @@
     "pages/panel/index",
     "pages/select/index",
     "pages/input/index",
+    "pages/numberpicker/index",
     "pages/switch/index",
     "pages/noticebar/index",
     "pages/dialog/index",

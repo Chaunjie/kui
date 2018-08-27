@@ -14,7 +14,7 @@ Page({
       list: [{name: '选择1'}, {name: '选择2'}, {name: '选择3'}],
       selectIndex: 1,
       type: 'danger',
-      position: 'left'
+      position: 'right'
     },
     selectInfo: ''
   },

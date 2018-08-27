@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "NumberPicker 数字输入框",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-numberpicker": "../../dist/numberpicker/index"
+  }
+}

@@ -1,0 +1,10 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <k-select selectData="{{ selectData }}" bind:select="select"/>
+</k-panel>
+<view class="font-12 padding-15">{{ selectInfo }}</view>
+<k-panel title="高级用法" custom-class="custom-panel">
+  <k-select selectData="{{ selectData1 }}"/>
+</k-panel>
+<k-panel custom-class="special-panel">
+  <k-button name="kai" bind:tap="onClick">点击切换位置</k-button>
+</k-panel>

@@ -1,0 +1,39 @@
+Component({
+  externalClasses: ['custom-class'],
+  options: {
+    multipleSlots: true
+  },
+  properties: {
+    checked: { // 当前选中状态
+      type: Boolean,
+      value: false
+    },
+    disabled: {  // 是否禁用
+      type: Boolean,
+      value: false
+    },
+    size: { // 可选尺寸：small, large
+      type: String,
+      value: 'small'
+    },
+    loading: {
+      type: Boolean,
+      value: false
+    },
+    sync: {
+      type: Boolean,
+      value: false
+    },
+    type: {
+      type: String,
+      value: 'success'
+    }
+  },
+
+  methods: {
+    onClick (e) {
+      // const data = e.currentTarget.dataset.item
+      this.triggerEvent('click');
+    }
+  }
+})

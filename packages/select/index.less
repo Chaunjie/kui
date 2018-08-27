@@ -1,0 +1,104 @@
+@import "../../less/font.less";
+@import "../../less/color.less";
+
+.select-container{
+  .select-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    .item-name{
+      color:#333;
+      line-height:14px;
+      line-height: 1.5em;
+    }
+    .kai-iconfont{
+      color:#333;
+      font-size:12px !important;
+      font-weight: bold;
+    }
+  }
+  
+  &.select-success{
+    .active{
+      .item-name{
+        color: @success;
+      }
+      .kai-iconfont{
+        color: @success;
+      }
+      > view {
+        color: @success;
+      }
+    }
+  }
+  &.select-danger{
+    .active{
+      .item-name{
+        color: @red;
+      }
+      .kai-iconfont{
+        color: @red;
+      }
+      > view {
+        color: @red;
+      }
+    }
+  }
+  &.select-kai{
+    .active{
+      .item-name{
+        color: @kai;
+      }
+      .kai-iconfont{
+        color: @kai;
+      }
+      > view {
+        color: @kai;
+      }
+    }
+  }
+}
+.select-right{
+  .select-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.select-left{
+  .select-item{
+    position: relative;
+    .item-name{
+      padding-left: 16px;
+    }
+    .kai-iconfont{
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+.custom-icon{
+  font-size: 14px;
+}
+.position-content{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &.position-left{
+    .item-name{
+      order: 1;
+    } 
+  }
+  &.position-right{
+    .item-name{
+      order: 0;
+    } 
+  }
+}

@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/panel/index",
+    "pages/select/index",
     "pages/noticebar/index",
     "pages/dialog/index",
     "pages/popup/index",

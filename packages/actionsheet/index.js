@@ -1,4 +1,5 @@
 Component({
+  externalClasses: ['custom-class'],
   properties: {
     asData: {
       type: Object,

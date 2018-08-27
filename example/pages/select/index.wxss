@@ -1,0 +1,7 @@
+.custom-panel > view:last-of-type{
+  padding: 20px 5px;
+}
+.special-panel > view:last-of-type{
+  padding: 15px;
+  background-color: #f5f5f5;
+}

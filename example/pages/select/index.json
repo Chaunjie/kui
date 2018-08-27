@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Select 选择",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-select": "../../dist/select/index",
+    "k-button": "../../dist/button/index"
+  }
+}

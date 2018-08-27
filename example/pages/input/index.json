@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Input 输入框",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-input": "../../dist/input/index"
+  }
+}

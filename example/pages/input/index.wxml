@@ -1,0 +1,45 @@
+<k-panel title="基础用法">
+  <k-input 
+    label="{{ name.label }}"
+    value="{{ name.value }}"
+    placeholder="{{ name.placeholder }}"/>
+  <k-input 
+    error="{{ tel.error }}"
+    label="{{ tel.label }}"
+    inputType="{{ tel.inputType }}"
+    placeholder="{{ tel.placeholder }}"/>
+  <k-input 
+    label="{{ pwd.label }}"
+    inputType="{{ pwd.inputType }}"
+    placeholder="{{ pwd.placeholder }}"/>
+  <k-input 
+    label="{{ address.label }}"
+    type="{{ address.type }}"
+    maxlength="{{ address.maxlength }}"
+    placeholder="{{ address.placeholder }}"/>
+  <k-input 
+    label="{{ disabled.label }}"
+    disabled="{{ disabled.disabled }}"
+    value="{{ disabled.value }}"
+    placeholder="{{ disabled.placeholder }}"/>
+</k-panel>
+<k-panel title="无边框用法">
+  <k-input 
+    adjust="{{ notitle.adjust }}"
+    placeholder="{{ notitle.placeholder }}"/>
+</k-panel>
+<k-panel title="带清除按钮用法">
+  <k-input 
+    label="{{ clear.label }}"
+    clear="{{ clear.clear }}"
+    adjust="{{ clear.adjust }}"
+    value="{{ clear.value }}"
+    placeholder="{{ clear.placeholder }}"/>
+</k-panel>
+<k-panel title="带正则用法">
+  <k-input 
+    label="{{ filter.label }}"
+    adjust="{{ filter.adjust }}"
+    filter="{{ filter.filter }}"
+    placeholder="{{ filter.placeholder }}"/>
+</k-panel>

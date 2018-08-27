@@ -1,6 +1,8 @@
 {
   "navigationBarTitleText": "Actionsheet 上拉菜单",
   "usingComponents": {
-    "k-actionsheet": "../../dist/actionsheet/index"
+    "k-actionsheet": "../../dist/actionsheet/index",
+    "k-panel": "../../dist/panel/index",
+    "k-button": "../../dist/button/index"
   }
 }

@@ -1,29 +1,30 @@
 Component({
   properties: {
-    show: Boolean,
-    title: String,
-    cancelText: String,
-    actions: {
-      type: Array,
-      value: []
-    },
-    overlay: {
-      type: Boolean,
-      value: true
-    },
-    closeOnClickOverlay: {
-      type: Boolean,
-      value: true
+    asData: {
+      type: Object,
+      value: {}
     }
   },
 
   methods: {
-    onSelect(event) {
-      const { index } = event.currentTarget.dataset;
-      const item = this.data.actions[index];
-      if (item && !item.disabled && !item.loading) {
-        this.triggerEvent('select', item);
+    doProp () {
+      return;
+    },
+    selectIndex (e) {
+      const { asData } = this.data
+      const index = e.currentTarget.dataset.index
+      const disabled = asData.actions[index].disabled
+      if (!disabled) {
+        this.triggerEvent('select', index)
+        this.hideAc()
       }
+    },
+    hideAc () {
+      const { asData } = this.data
+      const newObj = Object.assign({}, asData, { show: false})
+      this.setData({
+        asData: newObj
+      })
     },
 
     onCancel() {

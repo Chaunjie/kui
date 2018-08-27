@@ -3,38 +3,34 @@ import Page from '../../common/page';
 
 Page({
   data: {
-    show1: false,
-    show2: false,
-    show3: false
+    acData: {
+      show: false,
+      actions: []
+    },
+    clickInfo: ''
   },
 
-  onLoad() {
-    console.log(66666)
+  onLoad() {},
+  doSelect (e) {
+    const index = +e.detail
+    const { acData } = this.data
     this.setData({
-      actions: [
-        { name: '选项' },
-        { name: '选项', subname: '禁用状态' },
-        { name: '选项', loading: true },
-        { name: '禁用选项', disabled: true }
-      ]
-    });
+      clickInfo: '点击了' + acData.actions[index].name + '按钮'
+    })
   },
-
-  toggle(type) {
+  onClick () {
+    const { acData } = this.data
+    const actions = [
+      { name: '禁选' , disabled: true},
+      { name: '删除', icon: 'trash', color: 'red' },
+      { name: '分享', icon: 'share' }
+    ]
+    const newObj = {
+      show: true,
+      actions: actions
+    }
     this.setData({
-      [type]: !this.data[type]
+      acData: newObj
     });
-  },
-
-  toggleActionsheet1() {
-    this.toggle('show1');
-  },
-
-  toggleActionsheet2() {
-    this.toggle('show2');
-  },
-
-  toggleActionsheet3() {
-    this.toggle('show3');
   }
 });

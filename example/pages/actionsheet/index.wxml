@@ -1,14 +1,5 @@
-<k-actionsheet
-  show="{{ show3 }}"
-  title="标题"
-  bind:close="toggleActionsheet3"
->
-  <view class="content">内容</view>
-</k-actionsheet>
-<k-actionsheet
-  show="{{ show3 }}"
-  title="标题1"
-  bind:close="toggleActionsheet3"
->
-  <view class="content">内容1</view>
-</k-actionsheet>
+<k-panel title="普通用法" custom-class="custom-panel">
+  <k-button name="kai" catchtap="onClick">点击显示菜单</k-button>
+</k-panel>
+<k-actionsheet asData="{{ acData }}" bind:select="doSelect"/>
+<view class="padding-15 font-12">{{ clickInfo }}</view>

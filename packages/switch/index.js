@@ -35,11 +35,6 @@ Component({
       const dataset = e.currentTarget.dataset
       if (!dataset.disabled) {
         this.triggerEvent('change', !dataset.checked)
-        // if (dataset.sync) {
-        //   this.triggerEvent('change', !dataset.checked)
-        // } else {
-        //   this.triggerEvent('change', !dataset.checked)
-        // }
       }
     }
   }

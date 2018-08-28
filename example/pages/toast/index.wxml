@@ -1,0 +1,9 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <k-button name="kai" custom-class="custom-btn" bindtap="loading">加载中</k-button>
+  <k-button name="kai" custom-class="custom-btn" bindtap="success">成功</k-button>
+  <k-button name="kai" custom-class="custom-btn" bindtap="error">失败</k-button>
+  <k-button name="kai" custom-class="custom-btn" bindtap="warn">警告</k-button>
+  <k-button name="kai" custom-class="custom-btn" bindtap="show">轻提示</k-button>
+
+  <k-toast id="k-toast"/>
+</k-panel>

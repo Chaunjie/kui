@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Toast 提示",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-toast": "../../dist/toast/index",
+    "k-button": "../../dist/button/index"
+  }
+}

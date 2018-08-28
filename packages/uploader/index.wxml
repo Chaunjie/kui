@@ -1,4 +1,4 @@
-<view class="panel-upload">
+<view class="panel-upload custom-class">
   <view wx:for="{{ imgList }}" wx:for-item="item" wx:for-index="index" wx:key="index" class="img-list flex-list common-bg" style="width:{{imgWidth+'px'}};height:{{imgWidth+'px'}};background-image:url({{ item }});background-size:100% 100%;"
     catchtap="previewImg" data-index="{{ index }}">
     <k-icon name="close"  custom-class="delete-file" wx:if="{{ showClose }}" catchtap="removeImg" data-index="{{ index }}"/>

@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/panel/index",
     "pages/select/index",
+    "pages/toast/index",
     "pages/searchbar/index",
     "pages/uploader/index",
     "pages/input/index",

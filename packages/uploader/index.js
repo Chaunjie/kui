@@ -58,7 +58,6 @@ Component({
     upLoad (e) {
       const { imgCount, imgList, total } = this.data
       const count = total - imgList.length >= imgCount ? imgCount : total - imgList.length
-      console.log(count)
       wx.chooseImage({
         count: count,
         success: (res) => {

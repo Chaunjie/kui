@@ -2,7 +2,7 @@ export default class Toast{
   constructor (props={}) {
     this.options = {
       context: {},
-      methods: ['loading', 'show', 'warn', 'success', 'error']
+      methods: ['loading', 'show', 'warning', 'success', 'error']
     }
   }
 

@@ -32,7 +32,7 @@ Page({
       type: 'warning',
       content: '警告的提示'
     }
-    Toast.warn(options)
+    Toast.warning(options)
   },
   error () {
     const options = {

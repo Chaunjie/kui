@@ -16,7 +16,7 @@ Page({
       type: 'danger',
       position: 'right'
     },
-    selectInfo: ''
+    selectInfo: '点击了 选择1'
   },
 
   onClick () {
@@ -31,7 +31,7 @@ Page({
     const index = e.detail
     const { selectData } = this.data
     this.setData({
-      selectInfo: '点击了' + selectData.list[index].name
+      selectInfo: '点击了 ' + selectData.list[index].name
     })
   },
 

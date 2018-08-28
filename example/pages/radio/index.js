@@ -6,13 +6,13 @@ Page({
     radio: {
       type: 'circle',
       checked: false,
-      label: 'radio',
+      label: '单选框内容',
       disabled: false
     },
     radio1: {
       type: 'circle',
       checked: false,
-      label: 'radio',
+      label: '单选框内容',
       disabled: false
     },
     checkInfo: 'checked value false',

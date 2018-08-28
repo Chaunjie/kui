@@ -6,13 +6,13 @@ Page({
     checkbox: {
       type: 'circle',
       checked: false,
-      label: 'checkbox',
+      label: '复选框内容',
       disabled: false
     },
     checkbox1: {
       type: 'circle',
       checked: false,
-      label: 'checkbox',
+      label: '复选框内容',
       disabled: false
     },
     checkInfo: 'checked value false',

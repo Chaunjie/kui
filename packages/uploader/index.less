@@ -1,0 +1,49 @@
+@import "../../less/font.less";
+
+.add-file {
+  border: 1rpx solid #e1e1e1;
+  width: 80px;
+  height: 80px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 10px 10px 0;
+  justify-content:center;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+}
+.add-icon {
+  font-size:30px;
+  color:#666;
+  font-weight: bold;
+}
+
+.panel-upload{
+  display: flex;
+  flex-wrap: wrap;
+}
+.panel-upload .img-list {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+
+.panel-upload .img-list .delete-file {
+  position:absolute;
+  top:-7px;
+  right:-5px;
+  z-index:99;
+  background:#fff;
+  border-radius:8px;
+  font-size:16px;
+  border:1px solid #fff;
+  width:16px;
+  height:16px;
+}
+.panel-upload .flex-list:nth-child(4n) {
+  margin-right: 0;
+}

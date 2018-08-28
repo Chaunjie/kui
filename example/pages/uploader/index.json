@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Uploader 上传组件",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-uploader": "../../dist/uploader/index",
+    "k-icon": "../../dist/icon/index"
+  }
+}

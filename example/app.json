@@ -3,6 +3,8 @@
     "pages/index/index",
     "pages/panel/index",
     "pages/select/index",
+    "pages/searchbar/index",
+    "pages/uploader/index",
     "pages/input/index",
     "pages/numberpicker/index",
     "pages/switch/index",

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "SearchBar 搜索条",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-searchbar": "../../dist/searchbar/index"
+  }
+}

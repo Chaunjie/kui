@@ -1,0 +1,6 @@
+.custom-panel > view:last-of-type{
+  background-color: #f5f5f5;
+}
+.custom-searchbar > view > view > view:last-of-type{
+    color: red !important;
+}

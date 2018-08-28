@@ -1,5 +1,3 @@
-
-import Page from '../../common/page';
 import Toptips from '../../dist/toptips/index';
 
 Page({

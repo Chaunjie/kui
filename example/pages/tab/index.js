@@ -1,5 +1,3 @@
-
-import Page from '../../common/page';
 import Tab from '../../dist/tab/index';
 
 Page({

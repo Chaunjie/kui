@@ -1,5 +1,3 @@
-
-import Page from '../../common/page';
 import Toast from '../../dist/toast/index';
 
 Page({

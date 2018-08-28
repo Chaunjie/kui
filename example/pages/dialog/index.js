@@ -1,5 +1,4 @@
 
-import Page from '../../common/page';
 import Dialog from '../../dist/dialog/index';
 
 Page({

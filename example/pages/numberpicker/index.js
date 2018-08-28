@@ -1,6 +1,3 @@
-
-import Page from '../../common/page';
-
 Page({
   data: {
     number: [1, 2, 3],

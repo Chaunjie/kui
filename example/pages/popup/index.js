@@ -1,7 +1,4 @@
-
-import Page from '../../common/page';
 import Popup from '../../dist/popup/index';
-
 Page({
   data: {
     popData: [

@@ -1,6 +1,4 @@
 
-import Page from '../../common/page';
-
 Page({
   data: {
     imgTotal: 5,  // 可上传图片总数

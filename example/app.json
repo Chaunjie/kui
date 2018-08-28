@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/radio/index",
+    "pages/checkbox/index",
     "pages/panel/index",
     "pages/select/index",
     "pages/toast/index",

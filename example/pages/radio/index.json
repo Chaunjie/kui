@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Radio 单选框",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-radio": "../../dist/radio/index"
+  }
+}

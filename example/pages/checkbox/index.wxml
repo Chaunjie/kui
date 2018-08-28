@@ -1,0 +1,40 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <view class="checkbox-panel">
+    <k-checkbox 
+      type="{{ checkbox.type }}"
+      checked="{{ checkbox.checked }}"
+      label="{{ checkbox.label }}"
+      disabled="{{ checkbox.disabled }}"
+      bind:change="change"
+      custom-class="custom-checkbox" />
+  </view>
+  <view class="font-12 padding-10">{{ checkInfo }}</view>
+  <view class="checkbox-panel">
+    <k-checkbox 
+      type="cube"
+      checked="{{ checkbox.checked }}"
+      label="{{ checkbox.label }}"
+      disabled="{{ checkbox.disabled }}"
+      position="right"
+      bind:change="change"
+      custom-class="custom-checkbox" />
+  </view>
+</k-panel>
+<k-panel title="高级用法" custom-class="custom-panel">
+  <view class="checkbox-panel">
+    <k-checkbox 
+      type="{{ checkbox1.type }}"
+      checked="{{ checkbox1.checked }}"
+      label="{{ checkbox1.label }}"
+      bind:change="change1"
+      custom-class="custom-checkbox" />
+  </view>
+  <view class="font-12 padding-10">{{ checkInfo1 }}</view>
+  <view class="checkbox-panel">
+    <k-checkbox 
+      type="cube"
+      label="{{ checkbox1.label }}"
+      disabled="{{ checkbox1.disabled }}"
+      custom-class="custom-checkbox" />
+  </view>
+</k-panel>

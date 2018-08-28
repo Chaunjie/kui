@@ -1,0 +1,40 @@
+<k-panel title="基础用法" custom-class="custom-panel">
+  <view class="radio-panel">
+    <k-radio
+      type="{{ radio.type }}"
+      checked="{{ radio.checked }}"
+      label="{{ radio.label }}"
+      disabled="{{ radio.disabled }}"
+      bind:change="change"
+      custom-class="custom-radio"/>
+  </view>
+  <view class="font-12 padding-10">{{ checkInfo }}</view>
+  <view class="radio-panel">
+    <k-radio 
+      type="cube"
+      checked="{{ radio.checked }}"
+      label="{{ radio.label }}"
+      disabled="{{ radio.disabled }}"
+      position="right"
+      bind:change="change"
+      custom-class="custom-radio" />
+  </view>
+</k-panel>
+<k-panel title="高级用法" custom-class="custom-panel">
+  <view class="radio-panel">
+    <k-radio 
+      type="{{ radio1.type }}"
+      checked="{{ radio1.checked }}"
+      label="{{ radio1.label }}"
+      bind:change="change1"
+      custom-class="custom-radio" />
+  </view>
+  <view class="font-12 padding-10">{{ checkInfo1 }}</view>
+  <view class="radio-panel">
+    <k-radio 
+      type="cube"
+      label="{{ radio1.label }}"
+      disabled="{{ radio1.disabled }}"
+      custom-class="custom-radio" />
+  </view>
+</k-panel>

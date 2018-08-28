@@ -1,8 +1,8 @@
 {
   "pages": [
-     "pages/uploader/index",
     "pages/index/index",
     "pages/radio/index",
+    "pages/uploader/index",
     "pages/checkbox/index",
     "pages/panel/index",
     "pages/select/index",

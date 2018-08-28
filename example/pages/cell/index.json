@@ -5,6 +5,7 @@
   	"k-cell-group": "../../dist/cell-group/index",
     "k-cell": "../../dist/cell/index",
     "k-tag": "../../dist/tag/index",
-    "k-icon": "../../dist/icon/index"
+    "k-icon": "../../dist/icon/index",
+    "k-switch": "../../dist/switch/index"
   }
 }

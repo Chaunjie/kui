@@ -1,13 +1,13 @@
 {
   "pages": [
+     "pages/uploader/index",
     "pages/index/index",
     "pages/radio/index",
     "pages/checkbox/index",
     "pages/panel/index",
     "pages/select/index",
     "pages/toast/index",
-    "pages/searchbar/index",
-    "pages/uploader/index",
+    "pages/searchbar/index", 
     "pages/input/index",
     "pages/numberpicker/index",
     "pages/switch/index",

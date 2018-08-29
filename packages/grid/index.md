@@ -5,7 +5,7 @@
 ```json
 "usingComponents": {
     "k-grid": "path/to/kai-ui/dist/grid/index",
-    "k-grid-item": "path/to/kai-ui/dist/grid-item/index",
+    "k-grid-item": "path/to/kai-ui/dist/grid-item/index"
   }
 ```
 

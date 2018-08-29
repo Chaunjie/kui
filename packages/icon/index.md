@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  k-icon": "path/to/kai-ui/dist/icon/index
+  "k-icon": "path/to/kai-ui/dist/icon/index"
 }
 ```
 

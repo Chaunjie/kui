@@ -1,4 +1,3 @@
-import Popup from '../../dist/popup/index';
 Page({
   data: {
     popData: [
@@ -26,13 +25,33 @@ Page({
       }
     ]
   },
+  onTap (e) {
+    const status = e.detail
+    const index  = +e.currentTarget.dataset.index
+    const { popData } = this.data
+    const newData = [...popData]
+    newData[index].showPopup = status
+    this.setData({
+      popData: newData
+    })
+  },
   onClick (e) {
     const index  = +e.currentTarget.dataset.index
-    Popup.show('#popup-'+index)
+    const { popData } = this.data
+    const newData = [...popData]
+    newData[index].showPopup = true
+    this.setData({
+      popData: newData
+    })
   },
   close (e) {
     const index  = +e.currentTarget.dataset.index
-    Popup.hide('#popup-'+index)
+    const { popData } = this.data
+    const newData = [...popData]
+    newData[index].showPopup = false
+    this.setData({
+      popData: newData
+    })
   },
   onLoad() {}
 });

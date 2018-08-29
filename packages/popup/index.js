@@ -1,5 +1,3 @@
-import Popup from './popup';
-
 Component({
   externalClasses: ['custom-class'],
   options: {
@@ -27,26 +25,17 @@ Component({
   },
 
   methods: {
-    show () {
-      this.setData({
-        show: true
-      })
-    },
-    hide () {
-      this.setData({
-        show: false
-      })
+    doProp () {
+      return
     },
     togglePopup () {
       const { maskHide } = this.data
       if (maskHide) {
-        this.setData({
-          show: !this.data.show
-        })
+        this.emitEvent(!this.data.show)
       }
+    },
+    emitEvent (status) {
+      this.triggerEvent('click', status)
     }
   }
 })
-
-const popup = new Popup()
-export default popup;

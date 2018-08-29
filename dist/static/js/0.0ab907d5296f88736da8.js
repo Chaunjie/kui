@@ -1,0 +1,2 @@
+webpackJsonp([0],{VvzW:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("section",[t("h1",[this._v("test")])])}]},r=n("VU/8")(null,s,!1,null,null,null);t.default=r.exports},yCYF:function(e,t,n){e.exports=n("VvzW")}});
+//# sourceMappingURL=0.0ab907d5296f88736da8.js.map

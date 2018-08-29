@@ -33,15 +33,13 @@ Component({
       if (dataset.disabled) {
         return
       }
+      let reNum = num
       if (num - step >= min) {
-        this.setData({
-          num: num - step
-        })
+        reNum = num - step
       } else {
-        this.setData({
-          num: min
-        })
+        reNum = min
       }
+      this.triggerEvent('change', reNum)
     },
     _handleBlur (e) {
       const { num, step, min, max } = this.data
@@ -52,9 +50,7 @@ Component({
       } else if (value > max) {
         newValue = max
       }
-      this.setData({
-        num: newValue
-      })
+      this.triggerEvent('change', newValue)
     },
     _handlePlusStep (e) {
       const dataset = e.currentTarget.dataset
@@ -62,15 +58,13 @@ Component({
       if (dataset.disabled) {
         return
       }
+      let reNum = num
       if (num + step <= max) {
-        this.setData({
-          num: num + step
-        })
+        reNum = num + step
       } else {
-        this.setData({
-          num: max
-        })
+        reNum = max
       }
+      this.triggerEvent('change', reNum)
     },
     onClick (e) {
       // const data = e.currentTarget.dataset.item

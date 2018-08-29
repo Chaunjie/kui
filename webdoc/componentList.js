@@ -13,6 +13,7 @@ export default {
     'popup',
     'noticebar',
     'tab',
-    'toptips'
+    'toptips',
+    'dialog'
     ]
 }

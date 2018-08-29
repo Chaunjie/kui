@@ -1,4 +1,4 @@
-<view class="dialog {{ dialog.show ? 'dialog-show' : '' }} {{ out ? 'dialog-out' : '' }}">
+<view class="dialog custom-class {{ dialog.show ? 'dialog-show' : '' }} {{ out ? 'dialog-out' : '' }}">
     <view class="dialog-mask" catchtouchmove="doProp"></view>
     <view class="dialog-container">
       <view

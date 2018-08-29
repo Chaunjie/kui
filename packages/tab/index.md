@@ -44,6 +44,15 @@ Page({
 | selectedId | 选中的id | `String` `Number` | ` ` | ` ` |
 | scroll | 横向是否出现滚动条 | `Boolean` | `true` `false` | `false` |
 | class | 显示类型 | `String` | `tab-success` `tab-kai` `tab-danger` `tab-blue` `tab-gray` | ` ` |
+| list | 显示标签列表 | `Array` | ` `  | `[] ` |
+
+### list
+API中list对象
+
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
+|-----------|-----------|-----------|-----------|-------------|
+| id | 标签id | `Number` | ` ` | ` ` |
+| title | 标签内容 | `String` | ` ` | ` ` |
 
 ### Event
 

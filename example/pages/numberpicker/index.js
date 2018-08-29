@@ -19,5 +19,16 @@ Page({
     }
   },
 
+  change (e) {
+    const num = e.detail
+    const index = +e.currentTarget.dataset.index
+    const { number } = this.data
+    const arr = [...number]
+    arr[index] = num
+    this.setData({
+      number: arr
+    })
+  },
+
   onLoad() {}
 });

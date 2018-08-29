@@ -242,6 +242,9 @@ code.language-css:after {
 code.language-json:after {
   content: "JSON"
 }
+code.language-wxml:after {
+  content: "WXML"
+}
 
 .hljs {
   display: block;

@@ -14,6 +14,7 @@ export default {
     'noticebar',
     'tab',
     'toptips',
-    'dialog'
+    'dialog',
+    'toast'
     ]
 }

@@ -13,7 +13,7 @@
 #### 基础用法
 需要传入的属性见文档下方表格。
 
-```wxml
+```html
 <k-loading type="circular" custom-class="inline"/>
 ```
 

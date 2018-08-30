@@ -13,7 +13,7 @@
 #### 基础用法
 需要传入的属性见文档下方表格。
 
-```wxml
+```html
 <k-panel title="标题"  custom-class="panel-container">
   <view style="padding: 15px;background-color: #fff;">内容</view>
 </k-panel>

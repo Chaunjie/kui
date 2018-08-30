@@ -13,8 +13,8 @@
 #### 基础用法
 需要传入的属性见文档下方表格。
 
-```wxml
-<k-toptips id="toptips"></k-toptips>
+```html
+<k-toptips id="toptips"/>
 ```
 ```javascript
 import Toptips from 'path/to/kai-ui/dist/toptips/index';

@@ -13,7 +13,7 @@
 #### 基础用法
 需要传入的属性见文档下方表格。
 
-```wxml
+```html
 <k-button name="success" empty="{{ true }}">
   <view>
     <k-icon name="gear" custom-class="btn-icon"/>

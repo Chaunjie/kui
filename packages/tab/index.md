@@ -13,8 +13,8 @@
 #### 基础用法
 需要传入的属性见文档下方表格。
 
-```wxml
-<k-tab id="tab"></k-tab>
+```html
+<k-tab id="tab"/>
 ```
 ```javascript
 import Tab from 'path/to/kai-ui/dist/tab/index';

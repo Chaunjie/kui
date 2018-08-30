@@ -14,7 +14,7 @@
 #### 基础用法
 需要传入的属性见文档下方表格。
 
-```wxml
+```html
 <k-cell-group custom-class="single-cell-group">
   <k-cell title="标题" detail="内容" arrow="{{ true }}"></k-cell>
   <k-cell title="标题" subtitle="自定义内容" arrow="{{ true }}"></k-cell>
@@ -23,7 +23,7 @@
 
 #### 示例
 
-```wxml
+```html
 <k-cell-group custom-class="single-cell-group">
   <k-cell detail="自定义内容" arrow="{{ true }}" access="{{ true }}">
     <view slot="title">

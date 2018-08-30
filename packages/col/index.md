@@ -13,7 +13,7 @@
 #### 基础用法
 需要传入`col` `offset`，属性详情见文档下方表格。
 
-```wxml
+```html
 <k-col col="6" offset="6" custom-class="col-container">col:6 offset:6</k-col>
 ```
 

@@ -13,7 +13,7 @@
 #### 基础用法
 需要传入一个`asData`的数据，对象属性见文档下方表格。
 
-```wxml
+```html
 <k-actionsheet
   asData="{{ asData }}"
   bind:select="onSelect"

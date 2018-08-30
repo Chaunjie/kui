@@ -18,7 +18,12 @@ export default class Toast{
   createMethods () {
     const { options } = this
     options.methods.forEach(method => {
+      let methodName = method
+      if (method === 'show') {
+        methodName = ''
+      }
       this[method] = (res) => {
+        res.type = methodName
         options.context.show(res)
       }
     })

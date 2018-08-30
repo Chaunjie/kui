@@ -14,7 +14,7 @@
 #### 基础用法
 需要传入的属性见文档下方表格。
 
-```wxml
+```html
 <k-grid col="16">
   <k-grid-item wx:for="{{ [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] }}" wx:for-item="item" wx:key="index">
     <view slot="content">
@@ -27,7 +27,7 @@
 
 #### 带图标用法
 
-```wxml
+```html
 <k-grid col="9" bind:tap="onClick">
   <k-grid-item wx:for="{{ [0,1,2,3,4,5,6,7,8] }}" wx:for-item="item" wx:key="index">
     <view slot="content">

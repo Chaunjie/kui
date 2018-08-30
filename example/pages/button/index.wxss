@@ -7,3 +7,11 @@
 	display: inline-block !important;
 	margin-right: 5px;
 }
+.btn-loading {
+  display: inline-block !important;
+  margin-right: 5px;
+}
+.btn-loading > view {
+  position:relative;
+  top:4px;
+}

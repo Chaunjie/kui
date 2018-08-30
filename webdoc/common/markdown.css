@@ -258,7 +258,7 @@ code.language-wxml:after {
 }
 
 .hljs-addition, .hljs-meta, .hljs-string, .hljs-symbol, .hljs-template-tag, .hljs-template-variable {
-  color: #756bb1
+  color: #42b983
 }
 
 .hljs-comment, .hljs-quote {
@@ -274,7 +274,7 @@ code.language-wxml:after {
 }
 
 .hljs-built_in, .hljs-doctag, .hljs-keyword, .hljs-name, .hljs-section, .hljs-selector-class, .hljs-selector-id, .hljs-selector-tag, .hljs-strong, .hljs-tag, .hljs-title, .hljs-type {
-  color: #1976d2
+  color: #3e76f6
 }
 
 .hljs-emphasis {
@@ -283,4 +283,8 @@ code.language-wxml:after {
 
 .hljs-attribute {
   color: #e6550d
+}
+
+.hljs-attr{
+  color: #e96900
 }

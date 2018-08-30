@@ -67,7 +67,7 @@ body {
   float: right;
   height: 100%;
   background: transparent;
-  margin-right: 160px;
+  margin-right: 40px;
 }
 #app .main-header .main-header-nav li {
   list-style: none;
@@ -80,7 +80,8 @@ body {
   border-top: 2px solid transparent;
   text-align: center;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
+  margin-right: 10px;
   float: left;
   border-bottom: 3px solid #fff;
   -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),

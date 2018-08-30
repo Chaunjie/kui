@@ -89,6 +89,9 @@ body {
   transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
   border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+#app .main-header .main-header-nav li > a{
+  color: #314659;
+}
 #app .main-header .main-header-nav li.active {
   color: #5B94DC;
   border-bottom: 1px solid #5B94DC;

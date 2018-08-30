@@ -33,7 +33,7 @@ const router = () => {
     if (name === 'layout') {
       aName = 'col'
     }
-    const component = r => require.ensure([], () => r(require('../../packages/'+ aName +'/index.md')))
+    const component = r => require.ensure([], () => r(require(`../../packages/${aName}/index.md`)))
     return {
       path: `/${bName}`,
       name: `${bName}`,

@@ -9,7 +9,7 @@
       <div class="main-header-version">v1.1.0</div>
       <ul class="main-header-nav">
         <li class="active">原生版本</li>
-        <li><a href="#">wepy版本</a></li>
+        <li><a href="https://chaunjie.github.io/kai-ui/index.html#/components">wepy版本</a></li>
       </ul>
     </div>
 

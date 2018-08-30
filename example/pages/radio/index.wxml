@@ -1,6 +1,11 @@
 <k-panel title="基础用法" custom-class="custom-panel">
   <view class="radio-panel">
     <k-radio
+      wx:for="{{ radioArr }}" 
+      wx:for-item="radio" 
+      wx:for-index="index" 
+      wx:key="index"
+      data-index="{{ index }}"
       type="{{ radio.type }}"
       checked="{{ radio.checked }}"
       label="{{ radio.label }}"
@@ -8,9 +13,14 @@
       bind:change="change"
       custom-class="custom-radio"/>
   </view>
-  <view class="font-12 padding-10">{{ checkInfo }}</view>
+  <view class="font-12 padding-10"></view>
   <view class="radio-panel">
     <k-radio 
+      wx:for="{{ radioArr }}" 
+      wx:for-item="radio" 
+      wx:for-index="index" 
+      wx:key="index"
+      data-index="{{ index }}"
       type="cube"
       checked="{{ radio.checked }}"
       label="{{ radio.label }}"
@@ -22,7 +32,7 @@
 </k-panel>
 <k-panel title="高级用法" custom-class="custom-panel">
   <view class="radio-panel">
-    <k-radio 
+    <k-checkbox 
       type="{{ radio1.type }}"
       checked="{{ radio1.checked }}"
       label="{{ radio1.label }}"
@@ -33,6 +43,7 @@
   <view class="radio-panel">
     <k-radio 
       type="cube"
+      checked="{{ true }}"
       label="{{ radio1.label }}"
       disabled="{{ radio1.disabled }}"
       custom-class="custom-radio" />

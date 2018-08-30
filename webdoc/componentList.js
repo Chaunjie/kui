@@ -15,6 +15,14 @@ export default {
     'tab',
     'toptips',
     'dialog',
-    'toast'
+    'toast',
+    'uploader',
+    'select',
+    'checkbox',
+    'radio',
+    'numberpicker',
+    'switch',
+    'input',
+    'searchbar'
     ]
 }

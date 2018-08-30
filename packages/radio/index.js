@@ -32,13 +32,11 @@ Component({
       if (disabled) {
         return
       }
-      this.setData({
-        checked: !checked
-      })
-      this.triggerEvent('change', !checked)
+      if (!checked) {
+        this.triggerEvent('change', !checked)
+      }
     },
     onClick (e) {
-      // const data = e.currentTarget.dataset.item
       this.triggerEvent('click');
     }
   }

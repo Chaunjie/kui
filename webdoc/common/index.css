@@ -145,6 +145,9 @@ body {
   line-height: 50px;
   padding: 0 0 0 50px;
 }
+#app .main- .main--left ul .group-title:hover {
+  background-color: transparent !important;
+}
 #app .main- .main--left ul li a {
   font-size: 14px;
   color: #455a64;
@@ -158,6 +161,9 @@ body {
   -webkit-transition: 0.15s ease-out;
   transition: 0.15s ease-out;
   /*border-right: 1px solid #e8e8e8;*/
+}
+#app .main- .main--left ul li:hover {
+  background: #f3f3f3;
 }
 #app .main- .main--left ul li a:hover {
   color: #5B94DC;

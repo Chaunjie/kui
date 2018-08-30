@@ -1,2 +1,0 @@
-webpackJsonp([3],{"+wfq":function(e,t,n){e.exports=n("soeQ")},soeQ:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("section",[t("h1",[this._v("Button 按钮")])])}]},r=n("VU/8")(null,s,!1,null,null,null);t.default=r.exports}});
-//# sourceMappingURL=3.51139c8a3a42b83dd9b3.js.map

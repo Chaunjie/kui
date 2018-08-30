@@ -1,2 +1,0 @@
-webpackJsonp([4],{odMY:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("section",[t("p",[this._v("base.md")])])}]},r=n("VU/8")(null,s,!1,null,null,null);t.default=r.exports},zYnd:function(e,t,n){e.exports=n("odMY")}});
-//# sourceMappingURL=4.6cc8e5ed78e3a7ea6553.js.map

@@ -27,6 +27,10 @@
       </div>
       <div class="main--right">
         <router-view class="markdown"></router-view>
+        <div class="qr-block">
+          <img width="100" class="qrcode" src="http://images.kaishiba.com/kaiqr.jpg"/>
+          <p>扫码体验</p>
+        </div>
       </div>
     </div>
   </div>

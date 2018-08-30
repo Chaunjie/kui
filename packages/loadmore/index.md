@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-loadmore": "path/to/kai-ui/dist/loadmore/index"
+  "k-loadmore": "path/to/kai-ui/minicomponent/loadmore/index"
 }
 ```
 

@@ -189,3 +189,19 @@ body {
 .markdown{
   max-width: 700px;
 }
+.qr-block{
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  top: 150px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qr-block > p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}

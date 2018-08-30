@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-select": "path/to/kai-ui/dist/select/index"
+  "k-select": "path/to/kai-ui/minicomponent/select/index"
 }
 ```
 

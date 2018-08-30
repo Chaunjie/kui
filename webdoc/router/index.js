@@ -5,10 +5,10 @@ import componentList from '../componentList.js'
 Vue.use(Router)
 
 const router = () => {
-  let routes = [{
-      path: '/',
-      name: 'test',
-      component: r => require.ensure([], () => r(require('../docs/test.md')))
+  let routes = [
+    {
+      path: '/', 
+      redirect: 'start'
     },
     {
       path: '/start',

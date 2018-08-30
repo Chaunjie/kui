@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-radio": "path/to/kai-ui/dist/radio/index"
+  "k-radio": "path/to/kai-ui/minicomponent/radio/index"
 }
 ```
 

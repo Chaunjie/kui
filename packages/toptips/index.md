@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-toptips": "path/to/kai-ui/dist/toptips/index"
+  "k-toptips": "path/to/kai-ui/minicomponent/toptips/index"
 }
 ```
 
@@ -17,7 +17,7 @@
 <k-toptips id="toptips"/>
 ```
 ```javascript
-import Toptips from 'path/to/kai-ui/dist/toptips/index';
+import Toptips from 'path/to/kai-ui/minicomponent/toptips/index';
 
 Page({
   data: {},

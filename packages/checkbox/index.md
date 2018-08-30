@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-checkbox": "path/to/kai-ui/dist/checkbox/index"
+  "k-checkbox": "path/to/kai-ui/minicomponent/checkbox/index"
 }
 ```
 

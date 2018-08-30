@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-searchbar": "path/to/kai-ui/dist/searchbar/index"
+  "k-searchbar": "path/to/kai-ui/minicomponent/searchbar/index"
 }
 ```
 

@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-toast": "path/to/kai-ui/dist/toast/index"
+  "k-switch": "path/to/kai-ui/dist/switch/index"
 }
 ```
 
@@ -13,80 +13,46 @@
 #### 初始化
 
 ```html
-<k-toast id="k-toast"/>
+<k-switch 
+  checked="{{ item.checked }}" 
+  disabled="{{ item.disabled }}" 
+  loading="{{ item.loading }}" 
+  sync="{{ item.sync }}" 
+  type="{{ item.type }}" 
+  bind:change="change" 
+  data-index="{{ i }}"/>
 ```
 
 ```javascript
-
-import Toast from 'path/to/kai-ui/dist/toast/index';
-
 Page({
-  onLoad() {
-    Toast.init('k-toast')
+  data: {
+    item: {
+      title: '异步样式',
+      checked: false,
+      disabled: false,
+      sync: true,
+      loading: false,
+    }
   }
 });
 
-```
-
-#### 纯文本提示
-```javascript
-const options = {
-  content: '纯文本的提示'
-}
-Toast.show(options)
-
-```
-
-#### 加载中提示
-```javascript
-const options = {
-  content: '加载中的提示'
-}
-Toast.loading(options)
-setTimeout(() => {
-  Toast.hide()
-}, 3000)
-```
-
-#### 失败提示
-```javascript
-const options = {
-  content: '失败的提示'
-}
-Toast.error(options)
-```
-
-#### 成功提示
-```javascript
-const options = {
-  content: '成功的提示'
-}
-Toast.success(options)
-```
-
-#### 警告提示
-```javascript
-const options = {
-  content: '警告的提示'
-}
-Toast.warning(options)
 ```
 
 ### API
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |-----------|-----------|-----------|-----------|-------------|
-| options | 提示信息配置 | `Object` | ` ` | `{}` |
+| checked | 开关状态 | `Boolean` | `true` `false` | `false` |
+| disabled | 开关是否禁用 | `Boolean` | `true` `false` | `false` |
+| loading | 开关是否显示加载图标(必须搭配sync使用) | `Boolean` | `true` `false` | `false` |
+| sync | 开关是否是异步 | `Boolean` | `true` `false` | `false` |
+| type | 开关类型 | `String` | `success` `kai` `warn` `danger` | `success` |
 
-### options
-API options对象
+### Event
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-|-----------|-----------|-----------|-----------|-------------|
-| content | 提示内容 | `String` | `自定义` | ` ` |
-| position | 提示显示位置 | `String` | `middle` `top` `bottom` | `middle` |
-| duration | 多长时间之后隐藏 | `Number` | `自定义` | `3000` |
-
+| 事件名 | 说明 |
+|-----------|-----------|
+| bind:change | 开关组件状态更改时触发, 参数为更改后的状态 |
 
 ### 外部样式
 

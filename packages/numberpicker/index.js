@@ -65,10 +65,6 @@ Component({
         reNum = max
       }
       this.triggerEvent('change', reNum)
-    },
-    onClick (e) {
-      // const data = e.currentTarget.dataset.item
-      this.triggerEvent('click');
     }
   }
 })

@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-toast": "path/to/kai-ui/dist/toast/index"
+  "k-numberpicker": "path/to/kai-ui/dist/numberpicker/index"
 }
 ```
 
@@ -13,79 +13,58 @@
 #### 初始化
 
 ```html
-<k-toast id="k-toast"/>
+<k-numberpicker 
+  num="{{ number[2] }}" 
+  step="{{ config2.step }}" 
+  min="{{ config2.min }}" 
+  max="{{ config2.max }}" 
+  bind:change="change" 
+  data-index="2"/>
 ```
 
 ```javascript
-
-import Toast from 'path/to/kai-ui/dist/toast/index';
 
 Page({
-  onLoad() {
-    Toast.init('k-toast')
-  }
+  data: {
+    number: [1, 2, 3],
+    config2: {
+      step: 2,
+      min: 1,
+      max: 20
+    }
+  },
+
+  change (e) {
+    const num = e.detail
+    const index = +e.currentTarget.dataset.index
+    const { number } = this.data
+    const arr = [...number]
+    arr[index] = num
+    this.setData({
+      number: arr
+    })
+  },
+
+  onLoad() {}
 });
-
-```
-
-#### 纯文本提示
-```javascript
-const options = {
-  content: '纯文本的提示'
-}
-Toast.show(options)
-
-```
-
-#### 加载中提示
-```javascript
-const options = {
-  content: '加载中的提示'
-}
-Toast.loading(options)
-setTimeout(() => {
-  Toast.hide()
-}, 3000)
-```
-
-#### 失败提示
-```javascript
-const options = {
-  content: '失败的提示'
-}
-Toast.error(options)
-```
-
-#### 成功提示
-```javascript
-const options = {
-  content: '成功的提示'
-}
-Toast.success(options)
-```
-
-#### 警告提示
-```javascript
-const options = {
-  content: '警告的提示'
-}
-Toast.warning(options)
 ```
 
 ### API
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |-----------|-----------|-----------|-----------|-------------|
-| options | 提示信息配置 | `Object` | ` ` | `{}` |
+| num | 输入框数值 | `Number` `String` | `自定义` | `0` |
+| size | 尺寸类型 | `String` | `large` ` ` | ` ` |
+| step | 步长 | `Number` | `自定义` | `1` |
+| min | 最小值 | `Number` | `自定义` | `1` |
+| max | 最大值 | `Number` | `自定义` | `99999` |
 
-### options
-API options对象
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-|-----------|-----------|-----------|-----------|-------------|
-| content | 提示内容 | `String` | `自定义` | ` ` |
-| position | 提示显示位置 | `String` | `middle` `top` `bottom` | `middle` |
-| duration | 多长时间之后隐藏 | `Number` | `自定义` | `3000` |
+### Event
+
+| 事件名 | 说明 |
+|-----------|-----------|
+| bind:change | 组件值改变后触发, 参数为改变后的值 |
 
 
 ### 外部样式

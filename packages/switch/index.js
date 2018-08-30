@@ -12,10 +12,6 @@ Component({
       type: Boolean,
       value: false
     },
-    size: { // 可选尺寸：small, large
-      type: String,
-      value: 'small'
-    },
     loading: {
       type: Boolean,
       value: false

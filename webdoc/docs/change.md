@@ -1,5 +1,27 @@
 ## 更新日志
 
+### [1.2.0](https://github.com/Chaunjie/kai-ui/tree/v1.2.0)
+
+**修复问题**
+
+- 删除上传组件对七牛云sdk的依赖
+
+**优化&改进**
+
+- 新增对组件库对原生写法的支持
+- 重写checkbox样式
+- 重写radio样式
+- 文档重构
+
+**新增组件**
+
+- 新增 Folder 组件
+- 新增 Step 组件
+- 新增 Swipeout 组件
+- 新增 Slider 组件
+- 新增 Rate 组件
+
+
 ### [1.1.0](https://github.com/Chaunjie/kai-ui/tree/v1.1.0)
 
 **修复问题**

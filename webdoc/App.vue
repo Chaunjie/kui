@@ -59,14 +59,14 @@ export default {
     }
   },
   mounted () {
-    const path = this.$router.history.current.path
-    const index = path.indexOf('/wepy/')
-    console.log(this.$router)
-    console.log(index)
-    if (index >= 0) {
-      this.status = true
-      this.itemList = moduleList.wepyList
-    }
+    this.$router.onReady(() => {
+      const path = this.$router.history.current.path
+      const index = path.indexOf('/wepy/')
+      if (index >= 0) {
+        this.status = true
+        this.itemList = moduleList.wepyList
+      }
+    })
   }
 }
 </script>

@@ -2,7 +2,7 @@
 
 ### 使用指南
 在 `app.wpy` 中引入基础样式
-```js
+```javascript
 @import '../node_modules/kai-ui/src/less/index';
 ```
 

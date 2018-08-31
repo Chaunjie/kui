@@ -35,9 +35,6 @@ Component({
       if (!checked) {
         this.triggerEvent('change', !checked)
       }
-    },
-    onClick (e) {
-      this.triggerEvent('click');
     }
   }
 })

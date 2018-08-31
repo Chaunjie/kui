@@ -1,4 +1,4 @@
-<view class="cell-list custom-class {{access ? 'cell-list-access' : ''}}" bind:tap="onClick">
+<view class="cell-list custom-class {{access ? 'cell-list-access' : ''}}">
   <view class="cell-list-bd">
   	<view wx:if="{{title}}" class="cell-list-text">{{title || ''}}</view>
   	<slot name="title"/>

@@ -1,3 +1,6 @@
 Page({
-  data: {}
+  data: {},
+  tap () {
+    console.log(6666)
+  }
 })

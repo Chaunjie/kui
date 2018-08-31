@@ -14,9 +14,5 @@ Component({
     }
   },
 
-  methods: {
-    onClick (e) {
-      this.triggerEvent('click');
-    }
-  }
+  methods: {}
 })

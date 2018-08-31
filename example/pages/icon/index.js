@@ -9,7 +9,8 @@ Page({
       'map', 'menu', 'minus', 'mobile', 'more',
       'my', 'paper', 'pencil', 'phone', 'plus',
       'question', 'recovery', 'right', 'search', 'share',
-      'star', 'top', 'trash', 'unlock', 'video', 'closebg'
+      'star', 'top', 'trash', 'unlock', 'video', 'closebg',
+      'stargap', 'starbg'
   	]
   },
   onClick () {

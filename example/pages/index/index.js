@@ -19,6 +19,10 @@ Page({
           {
             title: 'Panel 面板',
             link: 'panel'
+          },
+          {
+            title: 'Folder 折叠面板',
+            link: 'folder'
           }
         ]
       },
@@ -65,6 +69,10 @@ Page({
           {
             title: 'Tab 标签',
             link: 'tab'
+          },
+          {
+            title: 'Step 步骤条',
+            link: 'step'
           }
         ]
       },
@@ -86,6 +94,10 @@ Page({
           {
             title: 'Toast 轻提示',
             link: 'toast'
+          },
+          {
+            title: 'Swipeout 滑动菜单',
+            link: 'swipeout'
           }
         ]
       },
@@ -119,6 +131,14 @@ Page({
           {
             title: 'Input 输入框',
             link: 'input'
+          },
+          {
+            title: 'Slider 滑块',
+            link: 'slider'
+          },
+          {
+            title: 'Rate 星级评分',
+            link: 'rate'
           }
         ]
       },

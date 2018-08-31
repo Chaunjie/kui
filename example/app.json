@@ -7,7 +7,7 @@
     "pages/panel/index",
     "pages/select/index",
     "pages/toast/index",
-    "pages/searchbar/index", 
+    "pages/searchbar/index",
     "pages/input/index",
     "pages/numberpicker/index",
     "pages/switch/index",
@@ -25,7 +25,12 @@
     "pages/layout/index",
     "pages/cell/index",
     "pages/tag/index",
-    "pages/actionsheet/index"
+    "pages/actionsheet/index",
+    "pages/slider/index",
+    "pages/rate/index",
+    "pages/swipeout/index",
+    "pages/step/index",
+    "pages/folder/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",

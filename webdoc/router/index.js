@@ -24,10 +24,24 @@ const router = () => {
       path: '/base',
       name: 'base',
       component: r => require.ensure([], () => r(require('../docs/base.md')))
+    },
+    {
+      path: '/wepy/start',
+      name: 'wepystart',
+      component: r => require.ensure([], () => r(require('../docs/introduce.md')))
+    },
+    {
+      path: '/change',
+      name: 'change',
+      component: r => require.ensure([], () => r(require('../docs/change.md')))
+    },
+    {
+      path: '/wepy/base',
+      name: 'wepybase',
+      component: r => require.ensure([], () => r(require('../docs/base.md')))
     }]
 
-  const modules = componentList.list
-  const routerArr = modules.map((name) => {
+  const routerArr = componentList.list.map((name) => {
     let aName = name
     let bName = name
     if (name === 'layout') {
@@ -40,7 +54,15 @@ const router = () => {
       component
     }
   })
-  const newArr = [...routes, ...routerArr]
+  const routerWepy = componentList.list.map((name) => {
+    const component = r => require.ensure([], () => r(require(`../wepydocs/docs/${name}.md`)))
+    return {
+      path: `/wepy/${name}`,
+      name: `wepy${name}`,
+      component
+    }
+  })
+  const newArr = [...routes, ...routerArr, ...routerWepy]
   return newArr
 }
 

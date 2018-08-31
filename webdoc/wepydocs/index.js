@@ -1,5 +1,3 @@
-import wepyList from './wepydocs/index.js'
-
 export default {
   list: [
     {
@@ -7,7 +5,7 @@ export default {
       list: [
         {
           name: '快速上手',
-          path: '/start'
+          path: '/wepy/start'
         },
         {
           name: '更新日志',
@@ -15,7 +13,7 @@ export default {
         },
         {
           name: '基础样式',
-          path: '/base'
+          path: '/wepy/base'
         }
       ]
     },
@@ -24,22 +22,22 @@ export default {
       list: [
         {
           name: 'Layout',
-          path: '/layout',
+          path: '/wepy/layout',
           nick: '布局'
         },
         {
           name: 'Grid',
-          path: '/grid',
+          path: '/wepy/grid',
           nick: '宫格'
         },
         {
           name: 'Cell',
-          path: '/cell',
+          path: '/wepy/cell',
           nick: '列表'
         },
         {
           name: 'Panel',
-          path: '/panel',
+          path: '/wepy/panel',
           nick: '面板'
         }
       ]
@@ -49,27 +47,27 @@ export default {
       list: [
         {
           name: 'Button',
-          path: '/button',
+          path: '/wepy/button',
           nick: '按钮'
         },
         {
           name: 'Icon',
-          path: '/icon',
+          path: '/wepy/icon',
           nick: '图标'
         },
         {
           name: 'Loadmore',
-          path: '/loadmore',
+          path: '/wepy/loadmore',
           nick: '更多'
         },
         {
           name: 'Loading',
-          path: '/loading',
+          path: '/wepy/loading',
           nick: '加载'
         },
         {
           name: 'Tag',
-          path: '/tag',
+          path: '/wepy/tag',
           nick: '标记'
         }
       ]
@@ -79,17 +77,17 @@ export default {
       list: [
         {
           name: 'Popup',
-          path: '/popup',
+          path: '/wepy/popup',
           nick: '弹出层'
         },
         {
           name: 'NoticeBar',
-          path: '/noticebar',
+          path: '/wepy/noticebar',
           nick: '通知栏'
         },
         {
           name: 'Tab',
-          path: '/tab',
+          path: '/wepy/tab',
           nick: '标签'
         }
       ]
@@ -99,22 +97,22 @@ export default {
       list: [
         {
           name: 'ActionSheet',
-          path: '/actionsheet',
+          path: '/wepy/actionsheet',
           nick: '操作盘'
         },
         {
           name: 'Toptips',
-          path: '/toptips',
+          path: '/wepy/toptips',
           nick: '顶部提示'
         },
         {
           name: 'Dialog',
-          path: '/dialog',
+          path: '/wepy/dialog',
           nick: '对话框'
         },
         {
           name: 'Toast',
-          path: '/toast',
+          path: '/wepy/toast',
           nick: '轻提示'
         }
       ]
@@ -124,37 +122,37 @@ export default {
       list: [
         {
           name: 'Uploader',
-          path: '/uploader',
+          path: '/wepy/uploader',
           nick: '上传'
         },
         {
           name: 'Select',
-          path: '/select',
+          path: '/wepy/select',
           nick: '选择'
         },
         {
           name: 'Checkbox',
-          path: '/checkbox',
+          path: '/wepy/checkbox',
           nick: '多选框'
         },
         {
           name: 'Radio',
-          path: '/radio',
+          path: '/wepy/radio',
           nick: '单选框'
         },
         {
           name: 'NumberPicker',
-          path: '/numberpicker',
+          path: '/wepy/numberpicker',
           nick: '数字输入框'
         },
         {
           name: 'Switch',
-          path: '/switch',
+          path: '/wepy/switch',
           nick: '开关'
         },
         {
           name: 'Input',
-          path: '/input',
+          path: '/wepy/input',
           nick: '输入框'
         }
       ]
@@ -164,11 +162,10 @@ export default {
       list: [
         {
           name: 'SearchBar',
-          path: '/searchbar',
+          path: '/wepy/searchbar',
           nick: '搜索条'
         }
       ]
     }
-  ],
-  wepyList: wepyList.list
+  ]
 }

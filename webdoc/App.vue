@@ -8,8 +8,8 @@
       <div class="main-header-title">kai-ui</div>
       <div class="main-header-version">v1.1.0</div>
       <ul class="main-header-nav">
-        <li class="active">原生版本</li>
-        <li><a href="https://chaunjie.github.io/kai-ui/index.html#/components">wepy版本</a></li>
+        <li :class="!status ? 'active' : ''" @click="translate(false)">原生版本</li>
+        <li :class="status ? 'active' : ''" @click="translate(true)">wepy版本</li>
       </ul>
     </div>
 
@@ -42,7 +42,30 @@ export default {
   name: 'App',
   data () {
     return {
-      itemList: moduleList.list
+      itemList: moduleList.list,
+      status: false
+    }
+  },
+  methods: {
+    translate (e) {
+      this.status = e
+      if (e) {
+        this.itemList = moduleList.wepyList
+        this.$router.push({name: 'wepystart'})
+      } else {
+        this.itemList = moduleList.list
+        this.$router.push({name: 'start'})
+      }      
+    }
+  },
+  mounted () {
+    const path = this.$router.history.current.path
+    const index = path.indexOf('/wepy/')
+    console.log(this.$router)
+    console.log(index)
+    if (index >= 0) {
+      this.status = true
+      this.itemList = moduleList.wepyList
     }
   }
 }
@@ -50,5 +73,4 @@ export default {
 
 <style>
 @import './common/index.css';
-
 </style>

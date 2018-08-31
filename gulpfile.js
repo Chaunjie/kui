@@ -44,7 +44,7 @@ gulp.task('compile-wxml', () => copy('wxml'));
 gulp.task('build', () => {
 	return gulp.src(dist + '/**/*')
     .pipe(gulp.dest(minPath))
-    .pipe(gulp.src(minPath + '/**/*.js'))
+    // .pipe(gulp.src(minPath + '/**/*.js'))
 }) 
 
 gulp.task('default', () => {

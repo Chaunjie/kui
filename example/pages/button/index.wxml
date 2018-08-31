@@ -31,7 +31,7 @@
 	</k-button>
 	<k-button name="danger" empty="true">
 		<view>
-			<k-loading custom-class="btn-icon"/>
+			<k-loading custom-class="btn-loading"/>
 			<text>京东支付</text>
 		</view>		
 	</k-button>

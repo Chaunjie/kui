@@ -28,7 +28,6 @@ Component({
       clearTimeout(timer)
       return new Promise((resolve, reject) => {
         this.setData({
-          type: '',
           content: '提示内容',
           show: false,
           timer: '',

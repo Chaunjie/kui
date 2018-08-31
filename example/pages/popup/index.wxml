@@ -5,7 +5,7 @@
   <k-button name="kai" custom-class="custom-btn" catchtap="onClick" data-index="3">下边弹出</k-button>
   <k-button name="kai" custom-class="custom-btn" catchtap="onClick" data-index="4">左边弹出</k-button>
 </k-panel>
-<k-popup wx:for="{{ popData }}" wx:for-item="item" wx:for-index="index" wx:key="index" show="{{item.showPopup}}" position="{{item.position}}" maskHide="{{item.maskHide}}" id="popup-{{index}}">
+<k-popup wx:for="{{ popData }}" wx:for-item="item" wx:for-index="index" wx:key="index" show="{{item.showPopup}}" position="{{item.position}}" maskHide="{{item.maskHide}}" id="popup-{{index}}" bind:click="onTap" data-index="{{ index }}">
   <view class="pop-inner {{'pop-'+item.position}}">
     <view class="pop-text">忆江南</view>
     <view class="pop-text">江南好</view>

@@ -1,9 +1,9 @@
 <k-panel title="基础使用" custom-class="custom-panel">
-  <k-numberpicker num="{{ number[0] }}" step="{{ config.step }}" min="{{ config.min }}" max="{{ config.max }}"></k-numberpicker>
+  <k-numberpicker num="{{ number[0] }}" step="{{ config.step }}" min="{{ config.min }}" max="{{ config.max }}" bind:change="change" data-index="0"></k-numberpicker>
 </k-panel>
 <k-panel title="自定义步长使用" custom-class="custom-panel">
-  <k-numberpicker num="{{ number[2] }}" step="{{ config2.step }}" min="{{ config2.min }}" max="{{ config2.max }}" ></k-numberpicker>
+  <k-numberpicker num="{{ number[2] }}" step="{{ config2.step }}" min="{{ config2.min }}" max="{{ config2.max }}" bind:change="change" data-index="2"></k-numberpicker>
 </k-panel>
 <k-panel title="大尺寸使用" custom-class="custom-panel">
-  <k-numberpicker num="{{ number[1] }}" step="{{ config1.step }}" min="{{ config1.min }}" max="{{ config1.max }}" size="{{ config1.size }}"></k-numberpicker>
+  <k-numberpicker num="{{ number[1] }}" step="{{ config1.step }}" min="{{ config1.min }}" max="{{ config1.max }}" size="{{ config1.size }}" bind:change="change" data-index="1"></k-numberpicker>
 </k-panel>

@@ -1,4 +1,4 @@
-<view class="slider">
+<view class="slider custom-class">
   <view wx:if="{{type==='single'}}" class="slider-container">
     <view class="slider-stick__wrap" catchtap="tap" >
       <view class="slider-stick slider-stick__unselected"></view>

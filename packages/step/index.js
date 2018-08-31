@@ -1,4 +1,5 @@
 Component({
+  externalClasses: ['custom-class'],
   relations: {
     '../step-item/index': {
       type: 'child'

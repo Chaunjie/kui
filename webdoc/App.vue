@@ -55,7 +55,7 @@ export default {
       } else {
         this.itemList = moduleList.list
         this.$router.push({name: 'start'})
-      }      
+      }
     }
   },
   mounted () {

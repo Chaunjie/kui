@@ -1,15 +1,15 @@
 export default {
   list: [
-    'actionsheet', 
-    'layout', 
-    'grid', 
-    'cell', 
-    'panel', 
-    'button', 
-    'icon', 
-    'loadmore', 
-    'loading', 
-    'tag', 
+    'actionsheet',
+    'layout',
+    'grid',
+    'cell',
+    'panel',
+    'button',
+    'icon',
+    'loadmore',
+    'loading',
+    'tag',
     'popup',
     'noticebar',
     'tab',
@@ -23,6 +23,11 @@ export default {
     'numberpicker',
     'switch',
     'input',
-    'searchbar'
+    'searchbar',
+    'folder',
+    'step',
+    'swipeout',
+    'slider',
+    'rate'
     ]
 }

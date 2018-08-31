@@ -41,6 +41,11 @@ export default {
           name: 'Panel',
           path: '/panel',
           nick: '面板'
+        },
+        {
+          name: 'Folder',
+          path: '/folder',
+          nick: '折叠面板'
         }
       ]
     },
@@ -91,6 +96,11 @@ export default {
           name: 'Tab',
           path: '/tab',
           nick: '标签'
+        },
+        {
+          name: 'Step',
+          path: '/step',
+          nick: '步骤条'
         }
       ]
     },
@@ -116,6 +126,11 @@ export default {
           name: 'Toast',
           path: '/toast',
           nick: '轻提示'
+        },
+        {
+          name: 'Swipeout',
+          path: '/swipeout',
+          nick: '滑动菜单'
         }
       ]
     },
@@ -156,6 +171,16 @@ export default {
           name: 'Input',
           path: '/input',
           nick: '输入框'
+        },
+        {
+          name: 'Slider',
+          path: '/slider',
+          nick: '滑块'
+        },
+        {
+          name: 'Rate',
+          path: '/rate',
+          nick: '星级评分'
         }
       ]
     },

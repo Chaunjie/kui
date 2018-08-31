@@ -1,4 +1,4 @@
-<view class="swipeout-container">
+<view class="swipeout-container custom-class">
   <view class="swipeout-content" bindtap="tap" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" style="transform: translateX({{left}}px);">
     <slot name="content"></slot>
   </view>

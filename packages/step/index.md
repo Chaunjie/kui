@@ -76,11 +76,11 @@ Page({
 | step | 步骤 | `Object` | - | - |
 
 ### step
- 参数 | 说明 | 类型 | 可选值 | 默认值 |
-|-----------|-----------|-----------|-------------|---|
-| title | 标题 | `String` |  - | - |
-| content | 内容 | `String` |  - | - |
-| iconClass | 自定义 icon 类名，需通过 custom-class 传入 | `String` |  - | - |
+ 参数 | 说明 | 类型 |  默认值 |
+|-----------|-----------|-----------|---|
+| title | 标题 | `String` |   - |
+| content | 内容 | `String` |  - |
+| iconClass | 自定义 icon 类名，需通过 custom-class 传入 | `String` | - |
 
 ### 外部样式
 

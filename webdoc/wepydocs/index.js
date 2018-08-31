@@ -39,6 +39,11 @@ export default {
           name: 'Panel',
           path: '/wepy/panel',
           nick: '面板'
+        },
+        {
+          name: 'Folder',
+          path: '/wepy/folder',
+          nick: '折叠面板'
         }
       ]
     },
@@ -89,6 +94,11 @@ export default {
           name: 'Tab',
           path: '/wepy/tab',
           nick: '标签'
+        },
+        {
+          name: 'Step',
+          path: '/wepy/step',
+          nick: '步骤条'
         }
       ]
     },
@@ -114,6 +124,11 @@ export default {
           name: 'Toast',
           path: '/wepy/toast',
           nick: '轻提示'
+        },
+        {
+          name: 'Swipeout',
+          path: '/wepy/swipeout',
+          nick: '滑动菜单'
         }
       ]
     },
@@ -154,6 +169,16 @@ export default {
           name: 'Input',
           path: '/wepy/input',
           nick: '输入框'
+        },
+        {
+          name: 'Slider',
+          path: '/wepy/slider',
+          nick: '滑块'
+        },
+        {
+          name: 'Rate',
+          path: '/wepy/rate',
+          nick: '星级评分'
         }
       ]
     },

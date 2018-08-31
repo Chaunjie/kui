@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Folder 折叠面板",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-folder": "../../dist/folder/index"
+  }
+}

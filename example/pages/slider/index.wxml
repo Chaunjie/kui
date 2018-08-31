@@ -1,0 +1,9 @@
+<k-panel title="基础用法">
+  <k-slider value="{{value}}" bind:change="slider"/>
+</k-panel>
+<k-panel title="自定义最大最小值">
+  <k-slider value="{{value1}}" max="10" min="5" bind:change="slider1"/>
+</k-panel>
+<k-panel title="双滑块选择数据范围">
+  <k-slider value="{{value2}}" max="100" min="0" type="double" bind:change="slider2"/>
+</k-panel>

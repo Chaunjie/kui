@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "step-iconfont";
+  src: url('//at.alicdn.com/t/font_804062_pvg9hzszcd.ttf') format('truetype');
+}
+.step-icon-bre, .step-icon-train, .step-icon-view {
+  font-family: "step-iconfont" !important;
+  font-size: 12px;
+}
+.step-icon-bre:before {content: "\e6e9";}
+.step-icon-train:before {content: "\e658";}
+.step-icon-view:before {content: "\e645";}
+

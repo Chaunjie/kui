@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Step 步骤条",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-step": "../../dist/step/index",
+    "k-step-item": "../../dist/step-item/index"
+  }
+}

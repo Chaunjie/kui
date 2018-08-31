@@ -1,0 +1,8 @@
+<view class="swipeout-container">
+  <view class="swipeout-content" bindtap="tap" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" style="transform: translateX({{left}}px);">
+    <slot name="content"></slot>
+  </view>
+  <view class="swipeout-action swipeout-action">
+    <slot name="action"></slot>
+  </view>
+</view>

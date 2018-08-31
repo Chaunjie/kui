@@ -1,0 +1,18 @@
+<k-panel title="竖向步骤条">
+  <k-step current="{{stepData1.current}}" >
+    <k-step-item wx:for="{{stepData1.steps}}" wx:for-item="item" wx:key="index" step="{{item}}">
+    </k-step-item>
+  </k-step>
+</k-panel>
+<k-panel title="横向步骤条">
+  <k-step current="{{stepData2.current}}" direction="{{stepData2.direction}}">
+    <k-step-item wx:for="{{stepData2.steps}}" wx:for-item="item" wx:key="index" step="{{item}}">
+    </k-step-item>
+  </k-step>
+</k-panel>
+<k-panel title="自定义icon">
+  <k-step current="{{stepData3.current}}" direction="{{stepData3.direction}}">
+    <k-step-item wx:for="{{stepData3.steps}}" wx:for-item="item" wx:key="index" step="{{item}}" custom-class="{{item.iconClass}}">
+    </k-step-item>
+  </k-step>
+</k-panel>

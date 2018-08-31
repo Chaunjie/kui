@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Rate 星级评分",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-rate": "../../dist/rate/index"
+  }
+}

@@ -1,0 +1,31 @@
+<k-panel title="基础用法">
+  <k-swipeout>
+    <view slot="content">
+      <view class="text">
+        <view>向左滑动试试：）</view>
+        忆江南，江南好，风景旧曾谙，日出江花红胜火，春来江水绿如蓝，能不忆江南。
+        忆江南，江南好，风景旧曾谙，日出江花红胜火，春来江水绿如蓝，能不忆江南。
+        忆江南，江南好，风景旧曾谙，日出江花红胜火，春来江水绿如蓝，能不忆江南。
+      </view>
+    </view>
+    <view slot="action">
+      <view class="action-btn btn1">移入收藏夹</view>
+      <view class="action-btn btn2">删除</view>
+    </view>
+  </k-swipeout>
+</k-panel>
+<k-panel>
+  <k-swipeout>
+    <view slot="content">
+      <view class="text">
+        <view>向左滑动试试：）</view>
+        忆江南，江南好，风景旧曾谙，日出江花红胜火，春来江水绿如蓝，能不忆江南。
+      </view>
+    </view>
+    <view slot="action">
+      <view class="action-btn btn0">找相似</view>
+      <view class="action-btn btn1">移入收藏夹</view>
+      <view class="action-btn btn2">删除</view>
+    </view>
+  </k-swipeout>
+</k-panel>

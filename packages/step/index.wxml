@@ -1,0 +1,3 @@
+<view class="step-{{direction}}">
+  <slot></slot>
+</view>

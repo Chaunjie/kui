@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Swipeout 滑动菜单",
+  "usingComponents": {
+    "k-panel": "../../dist/panel/index",
+    "k-swipeout": "../../dist/swipeout/index"
+  }
+}

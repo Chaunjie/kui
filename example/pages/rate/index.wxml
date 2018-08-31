@@ -1,0 +1,9 @@
+<k-panel title="基础用法">
+  <k-rate title="描述相符" value="{{value1}}" bind:change="rate1" />
+</k-panel>
+<k-panel title="自定义评分描述">
+  <k-rate title="物流服务" value="{{value2}}" desc="{{desc}}" bind:change="rate2" />
+</k-panel>
+<k-panel title="竖向布局">
+  <k-rate title="这是一个比较长的标题信息" value="{{value3}}" type="vertical" bind:change="rate3" />
+</k-panel>

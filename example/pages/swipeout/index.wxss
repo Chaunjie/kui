@@ -1,0 +1,22 @@
+.text {
+  padding: 10px;
+}
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50px;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #fff;
+}
+.btn1 {
+  background: #f40;
+}
+.btn2 {
+  background: #ccc;
+}
+.btn0 {
+  background: #f80;
+}

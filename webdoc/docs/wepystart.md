@@ -16,32 +16,32 @@ npm i kai-ui -S --production
 
 直接下载[GitHub](https://github.com/Chaunjie/kai-ui)或者通过 `git` 命令下载并把minparogram文件夹拷贝到自己项目中
 ```bash
-git clone https://github.com/Chaunjie/kui.git
+git clone https://github.com/Chaunjie/kai-ui.git
 ```
 
 ### 使用组件
 
 以按钮组件为例，只需要在 json 文件中引入按钮对应的自定义组件即可
 
-```json
-{
-  "usingComponents": {
-    "k-panel": "/path/to/kai-ui/minicomponent/panel/index"
-  }
+```javascript
+import Panel from 'kai-ui/Panel'
+
+components = {
+  panel: Panel
 }
 ```
 
 接着就可以在 wxml 中直接使用组件
 
 ```html
-<k-panel>使用kai-ui组件库开始</k-panel>
+<panel>使用kai-ui组件库开始</panel>
 ```
 
 ### 在开发者工具中预览
 
 ```bash
 # 拉取代码
-git clone https://github.com/Chaunjie/kui.git
+git clone https://github.com/Chaunjie/kai-ui.git
 
 # 安装项目依赖
 npm install
@@ -50,4 +50,4 @@ npm install
 npm run dev
 ```
 
-打开开发者工具，把`example`目录添加进去就可以预览示例了。
+打开开发者工具，把`dist`目录添加进去就可以预览示例了。

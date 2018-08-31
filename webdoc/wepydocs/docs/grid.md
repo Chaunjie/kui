@@ -1,7 +1,7 @@
 ## Grid 宫格
 
 ### 使用指南
-在 `xxx.wpy`页面中引入组件
+在页面中引入组件
 ```javascript
 import Grid from 'kai-ui/Grid'
 

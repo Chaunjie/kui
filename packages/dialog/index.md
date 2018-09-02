@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-dialog": "path/to/kai-ui/minicomponent/dialog/index"
+  "k-dialog": "path/to/kai-ui/dialog/index"
 }
 ```
 
@@ -19,7 +19,7 @@
 
 ```javascript
 
-import Dialog from 'path/to/kai-ui/minicomponent/dialog/index';
+import Dialog from 'path/to/kai-ui/dialog/index';
 
 Dialog.show('#k-dialog', options).then((value) => {
   console.log(value) // 0: 微信支付 1: 支付宝 2: 京东

@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-toast": "path/to/kai-ui/minicomponent/toast/index"
+  "k-toast": "path/to/kai-ui/toast/index"
 }
 ```
 
@@ -18,7 +18,7 @@
 
 ```javascript
 
-import Toast from 'path/to/kai-ui/minicomponent/toast/index';
+import Toast from 'path/to/kai-ui/toast/index';
 
 Page({
   onLoad() {

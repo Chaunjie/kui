@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-rate": "path/to/kai-ui/minicomponent/rate/index"
+  "k-rate": "path/to/kai-ui/rate/index"
 }
 ```
 

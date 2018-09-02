@@ -26,7 +26,7 @@ git clone https://github.com/Chaunjie/kui.git
 ```json
 {
   "usingComponents": {
-    "k-panel": "/path/to/kai-ui/minicomponent/panel/index"
+    "k-panel": "/path/to/kai-ui/panel/index"
   }
 }
 ```

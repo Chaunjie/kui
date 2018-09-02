@@ -4,8 +4,8 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-    "k-cell-group": "path/to/kai-ui/minicomponent/cell-group/index",
-    "k-cell": "path/to/kai-ui/minicomponent/cell/index"
+    "k-cell-group": "path/to/kai-ui/cell-group/index",
+    "k-cell": "path/to/kai-ui/cell/index"
   }
 ```
 

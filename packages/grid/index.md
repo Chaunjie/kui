@@ -4,8 +4,8 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-    "k-grid": "path/to/kai-ui/minicomponent/grid/index",
-    "k-grid-item": "path/to/kai-ui/minicomponent/grid-item/index"
+    "k-grid": "path/to/kai-ui/grid/index",
+    "k-grid-item": "path/to/kai-ui/grid-item/index"
   }
 ```
 

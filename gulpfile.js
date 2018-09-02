@@ -10,7 +10,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const src = path.join(__dirname, './packages');
 const minPath = path.join(__dirname, './miniprogram');
 const dist = path.join(__dirname, isProduction ? './dist' : './example/dist');
-const kaiUiPath = '/Users/xuchengjie/kaishiba/kai-ui/minprogram'
+const kaiUiPath = '/Users/xuchengjie/kaishiba/kai-ui/minicomponent'
 const ext = ['js', 'less', 'json', 'wxml'];
 
 function copy(ext) {

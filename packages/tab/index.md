@@ -4,7 +4,7 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-tab": "path/to/kai-ui/minicomponent/tab/index"
+  "k-tab": "path/to/kai-ui/tab/index"
 }
 ```
 
@@ -17,7 +17,7 @@
 <k-tab id="tab"/>
 ```
 ```javascript
-import Tab from 'path/to/kai-ui/minicomponent/tab/index';
+import Tab from 'path/to/kai-ui/tab/index';
 
 Page({
   data: {

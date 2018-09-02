@@ -5,7 +5,7 @@
 
 在 app.wxss 中引入内置样式
 ```javascript
-  @import "path/to/kai-ui/minicomponent/common/index.wxss";
+  @import "path/to/kai-ui/common/index.wxss";
 ```
 
 ### 代码演示

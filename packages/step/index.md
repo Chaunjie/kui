@@ -4,8 +4,8 @@
 在 `index.json` 中引入组件
 ```json
 "usingComponents": {
-  "k-step": "path/to/kai-ui/minicomponent/step/index",
-  "k-step-item": "path/to/kai-ui/minicomponent/step-item/index"
+  "k-step": "path/to/kai-ui/step/index",
+  "k-step-item": "path/to/kai-ui/step-item/index"
 }
 ```
 

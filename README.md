@@ -1,9 +1,7 @@
 
 
 <p align="center">
-    <a href="https://weapp.iviewui.com">
-        <img width="200" src="http://images.kaishiba.com/kai-ui.png">
-    </a>
+  <img width="200" src="http://images.kaishiba.com/kai-ui.png">
 </p>
 
 ## 快速上手

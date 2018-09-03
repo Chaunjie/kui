@@ -18,8 +18,7 @@
 
 ```javascript
 
-import toast from 'path/to/kai-ui/toast/toast';
-const Toast = new toast()
+import Toast from 'path/to/kai-ui/toast/index';
 
 Page({
   onLoad() {

@@ -17,8 +17,7 @@
 <k-tab id="tab"/>
 ```
 ```javascript
-import tab from 'path/to/kai-ui/tab/tab';
-const Tab = new tab()
+import Tab from 'path/to/kai-ui/tab/index';
 
 Page({
   data: {

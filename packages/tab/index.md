@@ -58,7 +58,7 @@ API中list对象
 
 | 事件名 | 说明 | 参数 |
 |-----------|-----------|-----------|
-| bind:select | 选中选项时触发| event.detail: 选项对应的对象 |
+| bind:select | 选中选项时触发| event.detail: 选项对应item的索引 |
 
 
 ### 外部样式

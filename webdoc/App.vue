@@ -6,7 +6,7 @@
         alt="logo">
       </div>
       <div class="main-header-title">kai-ui</div>
-      <div class="main-header-version">v1.2</div>
+      <div class="main-header-version">v1.2.3</div>
       <ul class="main-header-nav">
         <li :class="!status ? 'active' : ''" @click="translate(false)">原生版本</li>
         <li :class="status ? 'active' : ''" @click="translate(true)">wepy版本</li>

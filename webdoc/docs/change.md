@@ -1,10 +1,7 @@
 ## 更新日志
 
 ### [1.2.3](https://github.com/Chaunjie/kai-ui/tree/v1.2.0)
-
-**修复问题**
-
-- 删除上传组件对七牛云sdk的依赖
+`2018-09-03`
 
 **优化&改进**
 
@@ -15,14 +12,34 @@
 
 **新增组件**
 
-- 新增 Folder 组件
-- 新增 Step 组件
-- 新增 Swipeout 组件
-- 新增 Slider 组件
-- 新增 Rate 组件
+- 原生版本新增 Folder 组件
+- 原生版本新增 Step 组件
+- 原生版本新增 Swipeout 组件
+- 原生版本新增 Slider 组件
+- 原生版本新增 Rate 组件
+
+### [1.2.0](https://github.com/Chaunjie/kai-ui/tree/v1.2.0)
+`2018-08-29`
+
+**修复问题**
+
+- 删除上传组件对七牛云sdk的依赖
+
+**优化&改进**
+
+- wepy组件库文档重构
+
+**新增组件**
+
+- wepy版本新增 Folder 组件
+- wepy版本新增 Step 组件
+- wepy版本新增 Swipeout 组件
+- wepy版本新增 Slider 组件
+- wepy版本新增 Rate 组件
 
 
 ### [1.1.0](https://github.com/Chaunjie/kai-ui/tree/v1.1.0)
+`2018-08-15`
 
 **修复问题**
 

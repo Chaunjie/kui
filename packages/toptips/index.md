@@ -17,7 +17,8 @@
 <k-toptips id="toptips"/>
 ```
 ```javascript
-import Toptips from 'path/to/kai-ui/toptips/index';
+import toptips from 'path/to/kai-ui/toptips/toptips';
+const Toptips = new toptips()
 
 Page({
   data: {},

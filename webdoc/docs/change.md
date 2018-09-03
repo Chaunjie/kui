@@ -1,6 +1,6 @@
 ## 更新日志
 
-### [1.2.0](https://github.com/Chaunjie/kai-ui/tree/v1.2.0)
+### [1.2.3](https://github.com/Chaunjie/kai-ui/tree/v1.2.0)
 
 **修复问题**
 

@@ -31,8 +31,7 @@ events = {
 
 #### 案例
 ```javascript
-<style lang="less" src="../less/font.less"></style>
-  <style lang="less">
+<style lang="less">
   .icon-container{
     background-color:#fff;
   }
@@ -56,59 +55,69 @@ events = {
       justify-content: center;
     }
   }
-  </style>
-  <template>
-    <view class="kai-content icon-container layout">
-      <repeat for="{{list}}" index="index" item="item" key="key">
-        <view class="col col-6 icon-block" >
-          <view>
-            <icon :type="item" :event="index % 2 ? 'icon-tap' : ''"></icon>
-          </view>
-          <view>
-            <text class="icon-title">{{item}}</text>
-          </view>
+</style>
+<template>
+  <view class="kai-content icon-container layout">
+    <repeat for="{{list}}" index="index" item="item" key="key">
+      <view class="col col-6 icon-block" >
+        <view>
+          <icon :type.sync="item" :event.sync="index % 2 ? 'icon-tap' : ''"></icon>
         </view>
-      </repeat>
-    </view>
-  </template>
+        <view>
+          <text class="icon-title">{{item}}</text>
+        </view>
+      </view>
+    </repeat>
+  </view>
+</template>
 
-  <script>
-  import wepy from 'wepy'
-  import Icon from 'kai-ui/Icon'
+<script>
+import wepy from 'wepy'
+import icon from 'kai-ui/Icon'
 
-  export default class Icon extends wepy.page {
-    config = {
-      navigationBarTitleText: '字体库'
-    }
-    components = {
-      icon: icon
-    }
-
-    data = {
-      list: [
-        'error', 'tick', 'broadcast', 'back', 'calendar', 'camera', 'cart', 'close', 'comment', 'success', 'date', 'display', 'down', 'edit', 'flag', 'forward', 'gear', 'hide', 'home', 'image', 'info', 'laud', 'left', 'like', 'location', 'lock', 'mail', 'map', 'menu', 'minus', 'mobile', 'more', 'my', 'paper', 'pencil', 'phone', 'plus', 'question', 'recovery', 'right', 'search', 'share', 'star', 'top', 'trash', 'unlock', 'video', 'closebg'
-      ]
-    }
-
-    computed = {}
-
-    methods = {}
-
-    events = {
-      'icon-tap': function () {
-        console.log(111)
-      }
-    }
-
-    onLoad() {}
+export default class Icon extends wepy.page {
+  config = {
+    navigationBarTitleText: 'Icon 图标'
   }
-  </script>
+  components = {
+    icon: icon
+  }
+
+  data = {
+    list: [
+      'error', 'tick', 'broadcast', 'back', 'calendar', 'camera', 'cart',
+      'close', 'comment', 'success', 'date', 'display',
+      'down', 'edit', 'flag', 'forward', 'gear',
+      'hide', 'home', 'image', 'info', 'laud',
+      'left', 'like', 'location', 'lock', 'mail',
+      'map', 'menu', 'minus', 'mobile', 'more',
+      'my', 'paper', 'pencil', 'phone', 'plus',
+      'question', 'recovery', 'right', 'search', 'share',
+      'star', 'top', 'trash', 'unlock', 'video', 'closebg',
+      'stargap', 'starbg'
+    ]
+  }
+
+  events = {
+    'icon-tap': function () {
+      console.log(111)
+    }
+  }
+
+  onLoad() {}
+}
+</script>
 ```
 
 ### API
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
-|---------------------|-------------------------|-----------|-----------|-------------|
-| type | 图标的kai-iconfont(例如: 类名为kai-icon-plus type就为plus) | `String` | `自定义` | ` ` |
-| event | 事件回调 | `String` | `自定义` | ` ` |
+|-----------|-----------|-----------|-----------|-------------|
+| type | 图标的kai-iconfont(例如: 类名为kai-icon-plus type就为plus) | `String` | —— | ` ` |
+| detail | 事件回调名 | `String` | —— | ` ` |
 
+### Event
+
+| 事件名 | 说明 |
+|-----------|-----------|
+| icon-tap| 点击图片事件回调 无参 |

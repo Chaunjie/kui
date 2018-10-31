@@ -65,4 +65,4 @@ export default class Panel extends wepy.page {
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |-----------|-----------|-----------|-----------|-------------|
-| border | panel边框宽度，例如border-width: 1px 0 1px 0; | `String` | —— | —— |
+| border | panel边框宽度，例如border-width: 1px 0 1px 0; | `String` | —— | 0 |

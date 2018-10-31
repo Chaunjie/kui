@@ -113,7 +113,7 @@ export default class Icon extends wepy.page {
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |-----------|-----------|-----------|-----------|-------------|
-| type | 图标的kai-iconfont(例如: 类名为kai-icon-plus type就为plus) | `String` | —— | ` ` |
+| type | 图标的kai-iconfont(例如: 类名为kai-icon-plus type就为plus) | `String` | `error`, `tick`, `broadcast`, `back`, `calendar`, `camera`, `cart`, `close`, `comment`, `success`, `date`, `display`,  `down`, `edit`, `flag`, `forward`, `gear`, `hide`, `home`, `image`, `info`, `laud`, `left`, `like`, `location`, `lock`, `mail`, `map`, `menu`, `minus`, `mobile`, `more`, `my`, `paper`, `pencil`, `phone`, `plus`, `question`, `recovery`, `right`, `search`, `share`, `stargap`, `starbg` | ` ` |
 | detail | 事件回调名 | `String` | —— | ` ` |
 
 ### Event

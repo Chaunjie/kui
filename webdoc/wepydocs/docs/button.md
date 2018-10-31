@@ -10,10 +10,6 @@
 
 #### 案例
 ```javascript
-<style lang="less" src="../less/font.less"></style>
-<style lang="less">
-
-</style>
 <template>
   <view class="kai-content">
     <view class="padding-10">
@@ -67,7 +63,7 @@ import wepy from 'wepy'
 
 export default class Button extends wepy.page {
   config = {
-    navigationBarTitleText: '按钮'
+    navigationBarTitleText: 'Button 按钮'
   }
   components = {}
 

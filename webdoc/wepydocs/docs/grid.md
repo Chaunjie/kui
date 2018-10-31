@@ -4,9 +4,11 @@
 在页面中引入组件
 ```javascript
 import Grid from 'kai-ui/Grid'
+import gridItem from 'kai-ui/gridItem/'
 
 components = {
-  grid: Grid
+  grid: Grid,
+  griditem: gridItem
 }
 ```
 
@@ -16,37 +18,65 @@ components = {
 
 ```html
 <template>
-  <grid :grid="grid" :gridData="gridlist"></grid>
+  <grid col="9">
+    <griditem>
+      <!-- 内容 -->
+    </griditem>
+  </grid>
 </template>
 ```
 
-```javascript
+#### 案例
 
+```css
 <style lang="less">
-.grid-container {
-  background-color: #ccc;
-}
-.grid-items {
-  height: 80px;
-  background: #fff;
-  color: #666;
-}
-.no-padding .info{
-  padding: 0;
-}
+  .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .content {
+    font-size: 12px;
+    text-align: center;
+  }
+  .custom-icon{
+    font-size: 30px !important;
+    text-align:center;
+  }
 </style>
+```
+
+```javascript
 <template>
-  <view class="kai-content">
+  <view class="kai-content" style="width: 100%">
     <panel class="no-padding">
       <view slot="title" class="title">9宫格</view>
       <view class="panel">
-        <grid1 :grid="grid1" :gridData="gridlist1"></grid1>
+        <grid col="9" @tap="onClick">
+          <repeat for="{{arr9}}" index="index" item="item" key="key">
+            <griditem>
+              <view slot="content" class="custom-icon">
+                <icon :type.sync="iconArr[index]"/>
+                <view class="content">{{iconArr[index]}}</view>
+              </view>
+            </griditem>
+          </repeat>
+        </grid>
       </view>
     </panel>
     <panel class="no-padding">
       <view slot="title" class="title">16宫格</view>
       <view class="panel">
-        <grid :grid="grid2" :gridData="gridlist2"></grid>
+        <grid1 col="16" @tap="onClick">
+          <repeat for="{{arr16}}" index="index" item="item" key="key">
+            <griditem1 width="25%">
+              <view slot="content">
+                <view class="title">标题</view>
+                <view class="content">内容</view>
+              </view>
+            </griditem1>
+          </repeat>
+        </grid1>
       </view>
     </panel>
   </view>
@@ -55,6 +85,7 @@ components = {
 <script>
 import wepy from 'wepy'
 import grid from 'kai-ui/Grid'
+import gridItem from 'kai-ui/GridItem'
 import panel from 'kai-ui/Panel'
 import icon from 'kai-ui/Icon'
 
@@ -66,115 +97,31 @@ export default class Grid extends wepy.page {
   components = {
     grid: grid,
     grid1: grid,
+    griditem: gridItem,
+    griditem1: gridItem,
     panel: panel,
     icon: icon
   }
 
   data = {
-    grid1: 9,
-    grid2: 16,
-    gridlist1: [],
-    gridlist2: [],
-    gridItems: [
-      {
-        icon: 'comment',
-        text: '评论'
-      },
-      {
-        icon: 'camera',
-        text: '相机'
-      },
-      {
-        icon: 'calendar',
-        text: '日历'
-      },
-      {
-        icon: 'cart',
-        text: '购物车'
-      },
-      {
-        icon: 'date',
-        text: '时间'
-      },
-      {
-        icon: 'edit',
-        text: '编辑'
-      },
-      {
-        icon: 'gear',
-        text: '设置'
-      },
-      {
-        icon: 'home',
-        text: '主页'
-      },
-      {
-        icon: 'image',
-        text: '图像'
-      },
-      {
-        icon: 'laud',
-        text: '点赞'
-      },
-      {
-        icon: 'service',
-        text: '服务'
-      },
-      {
-        icon: 'like',
-        text: '收藏'
-      },
-      {
-        icon: 'mail',
-        text: '邮件'
-      },
-      {
-        icon: 'map',
-        text: '地图'
-      },
-      {
-        icon: 'mobile',
-        text: '手机'
-      },
-      {
-        icon: 'video',
-        text: '摄像'
-      }
-    ]
+    arr9: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    arr16: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    iconArr: ['calendar', 'camera', 'cart', 'comment', 'edit', 'gear', 'image', 'mail', 'map'],
+    itemWidth: '33.333333%'
   }
 
   computed = {}
 
   methods = {
+    onClick () {
+      console.log('点击宫格')
+    }
   }
 
   events = {
   }
 
-  initData (grid, gridItems, gridlist) {
-    const rows = Math.sqrt(grid)
-    const cols = rows
-    // 初始化grid
-    for (let i = 1, k = 0; i <= rows; i++) {
-      for (let j = 1; j <= cols; j++) {
-        gridlist.push({
-          class: 'grid-items' + i + j,
-          name: 'row' + i + '-col' + j,
-          icon: gridItems[k].icon,
-          text: gridItems[k].text
-        })
-        k++
-      }
-    }
-    console.log(this.gridlist)
-    this.$apply()
-    // 初始化grid
-  }
-
   onLoad() {
-    const {grid1, grid2, gridItems, gridlist1, gridlist2} = this
-    this.initData(grid1, gridItems, gridlist1)
-    this.initData(grid2, gridItems, gridlist2)
   }
 }
 </script>
@@ -183,15 +130,20 @@ export default class Grid extends wepy.page {
 
 ### API
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-|-----------|-------------------------|-----------|-----------|-------------|
-| grid | 宫格类型 | `Number` | `9` `16` | `9` |
-| gridData | 宫格数据 | `Array` | `自定义` | `[]` |
-
-### gridData
-  Api gridData数组参数
+grid
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
-|-----------|-------------------------|-----------|-----------|-------------|
-| icon | 宫格图标 | `String` | `自定义`| ` ` |
-| text | 宫格文案 | `String` | `自定义` | ` ` |
+|-----------|-----------|-----------|-----------|-------------|
+| col | 宫格数 | `Number` | `9` `16`  | `9` |
+
+grid-item
+
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
+|-----------|-----------|-----------|-----------|-------------|
+| width | 宫格宽度 | `String` | ——  | `33.33333333%` |
+
+Slot
+
+| 名称 | 说明 |
+|-----------|-----------|
+| content | 宫格自定义内容 |

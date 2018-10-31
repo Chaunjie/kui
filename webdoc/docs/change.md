@@ -1,4 +1,13 @@
 ## 更新日志
+### [1.2.4](https://github.com/Chaunjie/kai-ui/tree/v1.2.4)
+`2018-10-31`
+
+**优化&改进**
+
+- 新增tab组件被选中的样式
+- 新增tab组件border样式的修改
+- 新增checkbox和radio组件选中的样式支持
+- 文档修改
 
 ### [1.2.3](https://github.com/Chaunjie/kai-ui/tree/v1.2.0)
 `2018-09-03`

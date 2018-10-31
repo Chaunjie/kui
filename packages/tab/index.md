@@ -66,4 +66,7 @@ API中list对象
 | 类名 | 说明 |
 |-----------|-----------|
 | custom-class | 组件根节点自定义类名 |
+| custom-border-class | 组件被选中底部边框类名 |
+| custom-tab-class | 组件选项tab类名 |
+| custom-tab-active-class | 组件被选中tab类名 |
 
